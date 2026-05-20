@@ -1,0 +1,25 @@
+# OS generated files
+Thumbs.db
+EHthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Node / Dependency directories
+node_modules/
+jspm_packages/
+.pnpm-store/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store

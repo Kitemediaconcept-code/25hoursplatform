@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decoupled State Architecture — 25 Hours Insights</title>
+  <meta name="description" content="Read our practitioner guide on building modular, high-performance visual states in vanilla JavaScript without framework bloat.">
+  
+  <!-- SEO Keywords, Canonical & Open Graph metadata -->
+  <meta name="keywords" content="vanilla js state management, custom events, decoupled state architecture, frontend speed, DOM state events">
+  <link rel="canonical" href="https://25hoursplatform.com/blog-details.html">
+  <meta property="og:title" content="Decoupled State Architecture — 25 Hours">
+  <meta property="og:description" content="Read our practitioner guide on building high-performance visual states in vanilla JS without framework bloat.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://25hoursplatform.com/blog-details.html">
+  <meta property="og:image" content="assets/images/og-share.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Decoupled State Architecture — 25 Hours">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Decoupled State Architecture: Building modular, high-performance visual states in vanilla JavaScript",
+    "description": "Learn the core techniques behind standard render cycles, custom events, and hydration performance.",
+    "author": {
+      "@type": "Person",
+      "name": "Rahul Menon"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "25 Hours",
+      "logo": "https://25hoursplatform.com/assets/images/logo.png"
+    },
+    "datePublished": "2026-05-18T08:00:00Z",
+    "url": "https://25hoursplatform.com/blog-details.html"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- GLOBAL NAV BAR -->
+  <nav id="navbar">
+    <a class="logo" href="index.html">25<em>Hours</em></a>
+    <ul class="nav-links">
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggler" aria-label="Toggle visual theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <a href="login.html" class="btn btn-ghost">Log in</a>
+      <a href="dashboard.html" class="btn btn-primary">Dashboard</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <div class="mobile-nav-overlay" id="mobileNav">
+    <ul class="mobile-nav-links">
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Log In</a></li>
+      <li><a href="dashboard.html">Student Dashboard</a></li>
+    </ul>
+  </div>
+
+  <!-- SINGLE POST ARTICLE CONTAINER -->
+  <main class="container" style="padding: 40px 24px;">
+    <!-- Breadcrumbs -->
+    <ul class="breadcrumbs" style="max-width: 720px; margin: 0 auto 24px;">
+      <li><a href="index.html">Home</a></li>
+      <li>/</li>
+      <li><a href="blog.html">Blog</a></li>
+      <li>/</li>
+      <li><a href="blog-details.html" style="color: var(--text-main);">Article</a></li>
+    </ul>
+
+    <article class="post-layout">
+      <!-- Header -->
+      <header class="post-header">
+        <div class="eyebrow" style="margin-bottom: 16px;">Core Technology</div>
+        <h1 class="post-title brand-font">Decoupled State: Building modular, high-performance UI state engines in pure JavaScript</h1>
+        <div class="post-meta">
+          <span>By Rahul Menon</span>
+          <span>·</span>
+          <span>May 18, 2026</span>
+          <span>·</span>
+          <span>6 min read</span>
+        </div>
+      </header>
+
+      <!-- Featured Image Mock -->
+      <div style="width:100%; height:360px; background: linear-gradient(135deg, var(--accent-blue-light) 0%, rgba(96,165,250,0.15) 100%); display:flex; align-items:center; justify-content:center; color:var(--primary-color); font-size:64px; border-radius: var(--radius-lg); margin-bottom: 48px; border:1px solid var(--border-color);">
+        ⚙️
+      </div>
+
+      <!-- Article Content -->
+      <section class="post-content">
+        <p>In modern web development, the default instinct is to reach for highly complex frameworks (like React, Vue, or Next) the second a project requires interactive UI elements. While frameworks are excellent for heavy collaborative applications, they introduce massive initial script sizes, hydrate lags, and unnecessary layer dependencies that impact performance.</p>
+
+        <p>At 25 Hours, we choose a different approach. For highly interactive, responsive websites, we utilize decoupled, event-driven state patterns built in vanilla ES6. In this guide, we break down how to create modular, self-contained visual controllers that handle complex page behaviors smoothly.</p>
+
+        <blockquote>
+          "Simplicity is the ultimate sophistication. When you decouple UI state updates from framework lifecycle loops, your pages become blistering fast, accessible, and trivial to debug."
+        </blockquote>
+
+        <h2>The Core Principle: Custom Event Dispatchers</h2>
+        <p>Instead of forcing components to hold reference handles of sibling classes, we establish a centralized listener loop. Component controllers publish standard event packets to the window context, and visual containers listen and update autonomously.</p>
+
+        <p>Let's look at the basic structure of a pure JavaScript state engine:</p>
+
+        <pre style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 20px; font-family: monospace; font-size: 14px; color: var(--text-main); margin-bottom: 24px; overflow-x: auto;">
+class StateEngine {
+  constructor(initialState = {}) {
+    this.state = initialState;
+  }
+
+  update(diff) {
+    this.state = { ...this.state, ...diff };
+    const event = new CustomEvent('statechange', { detail: this.state });
+    window.dispatchEvent(event);
+  }
+}</pre>
+
+        <h2>Maximizing Visual Performance</h2>
+        <p>By shifting style updates directly into visual observers, we guarantee smooth transitions. Combining CustomEvent handlers with browser Intersection Observers lets us perform complex CSS triggers only when elements are fully loaded in the viewport, boosting Core Web Vitals to 100%.</p>
+
+        <h3>Key Takeaways for Your Projects</h3>
+        <p>1. Start with semantic HTML structure as the single source of truth.<br>
+        2. Keep components isolated and decoupled to prevent cascade failures.<br>
+        3. Listen to simple DOM changes rather than rebuilding entire page clusters.</p>
+      </section>
+    </article>
+  </main>
+
+  <!-- CTA BAND -->
+  <div class="cta-section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="cta-left">
+          <h2 class="cta-title">Ready to grow? Join 25 Hours today.</h2>
+          <p class="cta-sub">Start free. Upgrade anytime. Cancel whenever you want.</p>
+        </div>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn btn-hero-outline">Become Instructor</a>
+          <a href="login.html" class="btn btn-hero">Start Learning →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MULTI-COLUMN MODERN FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>25 Hours</h2>
+          <p>India's leading practitioner-first learning platform for modern professionals.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Twitter">🕊</a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+            <a href="#" class="social-icon" aria-label="YouTube">📺</a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Ecosystem</h3>
+          <ul class="footer-links-list">
+            <li><a href="courses.html">Browse Paths</a></li>
+            <li><a href="categories.html">Disciplines</a></li>
+            <li><a href="pricing.html">Memberships</a></li>
+            <li><a href="dashboard.html">Dashboard UI</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul class="footer-links-list">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="blog.html">Insights Blog</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul class="footer-links-list">
+            <li><a href="faq.html">FAQ Center</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="terms.html">Privacy Rules</a></li>
+            <li><a href="404.html">404 Error</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 25 Hours Platform. Production-Ready EdTech.</span>
+        <div class="footer-legal-links">
+          <a href="terms.html">Terms of Service</a>
+          <a href="terms.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
