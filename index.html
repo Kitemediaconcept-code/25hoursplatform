@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -217,16 +217,18 @@
     <div class="container">
       <div class="section">
         <div class="section-header reveal">
-          <p class="sec-eyebrow">POPULAR COURSES</p>
-          <h2 class="sec-title">Start Learning Today</h2>
-          <p class="sec-sub">Explore professional development paths led by world-class industry leaders.</p>
+          <p class="sec-eyebrow">FEATURED COURSES</p>
+          <h2 class="sec-title">Start learning today</h2>
+          <p class="sec-sub">Handpicked from platform originals, institutional partners, and expert collaborators.</p>
         </div>
         
         <div class="cat-strip reveal">
-          <button class="cat active" onclick="filterHomeCat(this,'all')">All Paths</button>
+          <button class="cat active" onclick="filterHomeCat(this,'all')">All</button>
           <button class="cat" onclick="filterHomeCat(this,'business')">Business</button>
           <button class="cat" onclick="filterHomeCat(this,'marketing')">Marketing</button>
           <button class="cat" onclick="filterHomeCat(this,'tech')">Technology</button>
+          <button class="cat" onclick="filterHomeCat(this,'finance')">Finance</button>
+          <button class="cat" onclick="filterHomeCat(this,'communication')">Communication</button>
           <button class="cat" onclick="filterHomeCat(this,'design')">Design</button>
         </div>
         
@@ -241,7 +243,7 @@
             </div>
             <div class="c-body">
               <p class="c-tag">Business</p>
-              <h3 class="c-name">Startup to Scale: Building Your First Venture</h3>
+              <h3 class="c-name">Startup to scale: building your first venture</h3>
               <p class="c-by">Rahul Menon · 6 weeks</p>
               <div class="c-foot">
                 <span class="c-price">₹1,499</span>
@@ -259,7 +261,7 @@
             </div>
             <div class="c-body">
               <p class="c-tag">Marketing</p>
-              <h3 class="c-name">Digital Marketing for Growth-Stage Brands</h3>
+              <h3 class="c-name">Digital marketing for growth-stage brands</h3>
               <p class="c-by">Nisha Pillai · 4 weeks</p>
               <div class="c-foot">
                 <span class="c-price">₹999</span>
@@ -269,6 +271,27 @@
           </a>
           
           <!-- Course Card 3 -->
+          <a class="c-card" data-cat="communication" href="course-details.html">
+            <div class="c-thumb" style="background:var(--accent-amber-light);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
+              </svg>
+            </div>
+            <div class="c-body">
+              <p class="c-tag">Communication</p>
+              <h3 class="c-name">Public speaking mastery for professionals</h3>
+              <p class="c-by">Arjun Das · 3 weeks</p>
+              <div class="c-foot">
+                <span class="c-price">Free</span>
+                <span class="pill pill-amber">Workshop</span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Course Card 4 -->
           <a class="c-card" data-cat="tech" href="course-details.html">
             <div class="c-thumb" style="background:var(--accent-blue-light);">
               <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -280,7 +303,7 @@
             </div>
             <div class="c-body">
               <p class="c-tag">Technology</p>
-              <h3 class="c-name">AI Tools for Modern Business Teams</h3>
+              <h3 class="c-name">AI tools for modern business teams</h3>
               <p class="c-by">Priya Kumar · 5 weeks</p>
               <div class="c-foot">
                 <span class="c-price">₹1,999</span>
@@ -289,17 +312,36 @@
             </div>
           </a>
           
-          <!-- Course Card 4 -->
+          <!-- Course Card 5 -->
+          <a class="c-card" data-cat="finance" href="course-details.html">
+            <div class="c-thumb" style="background:var(--accent-purple-light);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <div class="c-body">
+              <p class="c-tag">Finance</p>
+              <h3 class="c-name">Personal finance and wealth fundamentals</h3>
+              <p class="c-by">Arun Nair · 4 weeks</p>
+              <div class="c-foot">
+                <span class="c-price">₹1,299</span>
+                <span class="pill pill-teal">Certificate</span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Course Card 6 -->
           <a class="c-card" data-cat="design" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-amber-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <div class="c-thumb" style="background:var(--accent-teal-light);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="3"></circle>
                 <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path>
               </svg>
             </div>
             <div class="c-body">
               <p class="c-tag">Design</p>
-              <h3 class="c-name">Brand Identity Design for Creative Founders</h3>
+              <h3 class="c-name">Brand identity design for founders</h3>
               <p class="c-by">Shreya Menon · 3 weeks</p>
               <div class="c-foot">
                 <span class="c-price">₹799</span>

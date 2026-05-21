@@ -6,7 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Dual-Theme Persistence Engine
   const themeToggler = document.getElementById('themeToggler');
-  const initialTheme = localStorage.getItem('theme') || 'dark';
+  const initialTheme = localStorage.getItem('theme') || 'light';
   document.documentElement.setAttribute('data-theme', initialTheme);
   
   if (themeToggler) {

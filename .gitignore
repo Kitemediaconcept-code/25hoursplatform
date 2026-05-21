@@ -23,3 +23,8 @@ jspm_packages/
 *.sln
 *.sw?
 .DS_Store
+
+# Firebase CLI cache and logs
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
