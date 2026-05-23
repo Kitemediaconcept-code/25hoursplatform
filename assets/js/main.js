@@ -338,39 +338,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 3000);
     });
   }
-
-  // 15. Hero Card Slider Animation
-  const slideCards = document.querySelectorAll('.slide-card');
-  if (slideCards.length === 3) {
-    let currentSlide = 0;
-    
-    const updateSlider = (activeIndex) => {
-      slideCards.forEach((card, i) => {
-        card.classList.remove('active', 'prev', 'next', 'hidden');
-        
-        if (i === activeIndex) {
-          card.classList.add('active');
-        } else if (i === (activeIndex - 1 + 3) % 3) {
-          card.classList.add('prev');
-        } else if (i === (activeIndex + 1) % 3) {
-          card.classList.add('next');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-      currentSlide = activeIndex;
-    };
-
-    slideCards.forEach((card, index) => {
-      card.addEventListener('click', () => {
-        updateSlider(index);
-      });
-    });
-
-    // Auto play every 4 seconds
-    setInterval(() => {
-      let nextIndex = (currentSlide + 1) % 3;
-      updateSlider(nextIndex);
-    }, 4000);
-  }
 });
