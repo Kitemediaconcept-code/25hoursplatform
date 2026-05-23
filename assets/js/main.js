@@ -4,19 +4,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Dual-Theme Persistence Engine
-  const themeToggler = document.getElementById('themeToggler');
-  const initialTheme = localStorage.getItem('theme') || 'light';
-  document.documentElement.setAttribute('data-theme', initialTheme);
-  
-  if (themeToggler) {
-    themeToggler.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', targetTheme);
-      localStorage.setItem('theme', targetTheme);
-    });
-  }
+  // 1. Theme Logic Removed (Always Dark)
+  document.documentElement.setAttribute('data-theme', 'dark');
 
   // 2. Sticky Blurry Navbar
   const navbar = document.getElementById('navbar');
@@ -48,14 +37,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Premium Scroll Animations (AOS)
-  if (typeof AOS !== 'undefined') {
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 50,
-      easing: 'ease-out-cubic'
+  // 4. Native Reveal Animations (replaces AOS)
+  const revealElements = document.querySelectorAll('.reveal');
+  if (revealElements.length > 0 && 'IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    revealElements.forEach(el => {
+      revealObserver.observe(el);
     });
+  } else {
+    // Fallback if no observer support
+    revealElements.forEach(el => el.classList.add('visible'));
   }
 
   // 5. Dynamic Stats Counter Animation

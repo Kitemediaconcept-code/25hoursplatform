@@ -14,7 +14,7 @@
   <style>
     /* Specific Admin Styles Override */
     body {
-      background-color: var(--bg-secondary);
+      background-color: var(--bg-surface);
     }
     
     .admin-layout {
@@ -24,7 +24,7 @@
     
     .admin-sidebar {
       width: 280px;
-      background: var(--bg-primary);
+      background: var(--bg-main);
       border-right: 1px solid var(--border-color);
       display: flex;
       flex-direction: column;
@@ -52,17 +52,17 @@
       align-items: center;
       gap: 12px;
       padding: 12px 16px;
-      color: var(--text-muted);
+      color: var(--text-secondary);
       text-decoration: none;
-      border-radius: var(--radius-sm);
+      border-radius: 8px;
       font-weight: 500;
       margin-bottom: 8px;
-      transition: var(--transition-fast);
+      transition: all 0.2s;
     }
     
     .admin-nav-item:hover, .admin-nav-item.active {
-      background: var(--bg-surface);
-      color: var(--text-main);
+      background: rgba(212,175,55,0.1);
+      color: var(--gold);
     }
     
     .admin-main {
@@ -73,9 +73,9 @@
     
     /* Form Styles */
     .admin-card {
-      background: var(--bg-primary);
+      background: var(--bg-main);
       border: 1px solid var(--border-color);
-      border-radius: var(--radius-lg);
+      border-radius: 8px;
       padding: 32px;
       margin-bottom: 32px;
     }
@@ -98,28 +98,28 @@
     }
     
     .form-label {
-      font-size: 13px;
-      font-weight: 700;
+      font-size: 11px;
+      font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.1em;
       color: var(--text-muted);
     }
     
     .form-control {
       padding: 16px;
       border: 1px solid var(--border-color);
-      border-radius: var(--radius-sm);
+      border-radius: 4px;
       background: var(--bg-surface);
       font-family: inherit;
       font-size: 15px;
-      color: var(--text-main);
-      transition: var(--transition-fast);
+      color: var(--text-primary);
+      transition: all 0.2s;
     }
     
     .form-control:focus {
       outline: none;
-      border-color: var(--text-main);
-      background: var(--bg-primary);
+      border-color: var(--gold);
+      background: var(--bg-main);
     }
     
     /* Admin Table */
@@ -131,9 +131,9 @@
     .admin-table th {
       text-align: left;
       padding: 16px;
-      border-bottom: 2px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
       font-size: 11px;
-      font-weight: 700;
+      font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--text-muted);
@@ -144,13 +144,14 @@
       border-bottom: 1px solid var(--border-color);
       font-size: 14px;
       vertical-align: middle;
+      color: var(--text-secondary);
     }
     
     .badge {
       padding: 4px 12px;
-      border-radius: var(--radius-full);
+      border-radius: 4px;
       font-size: 11px;
-      font-weight: 700;
+      font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       background: var(--bg-surface);
@@ -158,9 +159,9 @@
     }
     
     .badge.active {
-      background: #e6f6eb;
-      color: #0c6b32;
-      border-color: #b0e3c0;
+      background: rgba(74, 222, 128, 0.1);
+      color: #4ade80;
+      border-color: rgba(74, 222, 128, 0.2);
     }
     
     .action-btns {
@@ -177,9 +178,9 @@
     <aside class="admin-sidebar">
       <div class="admin-sidebar-header">
         <a href="../index.html">
-          <img src="../assets/images/logo.png" alt="25 Hours" style="height: 32px;" onerror="this.src='https://via.placeholder.com/150x50?text=25+Hours'">
+          <img src="../assets/images/logo.png" alt="25 Hours" style="height: 32px; filter: invert(1);" onerror="this.src='https://via.placeholder.com/150x50?text=25+Hours'">
         </a>
-        <div style="margin-top: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase;">Admin Portal</div>
+        <div style="margin-top: 8px; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; color: var(--gold); text-transform: uppercase;">Admin Portal</div>
       </div>
       
       <nav class="admin-nav">
@@ -211,17 +212,17 @@
       
       <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 48px;">
         <div>
-          <h1 style="font-size: 32px; font-weight: 500; margin-bottom: 8px;">Dashboard Overview</h1>
-          <p style="color: var(--text-muted);">Manage your platform's content and users.</p>
+          <h1 style="font-family: var(--font-serif); font-size: 32px; color: var(--text-primary); margin-bottom: 8px;">Dashboard Overview</h1>
+          <p style="color: var(--text-secondary);">Manage your platform's content and users.</p>
         </div>
         <div style="display: flex; align-items: center; gap: 16px;">
-          <a href="../dashboard.html" class="btn btn-outline" style="padding: 0 24px; height: 48px;">Student View</a>
+          <a href="../dashboard.html" class="btn btn--outline">Student View</a>
         </div>
       </header>
       
       <!-- ADD COURSE SECTION -->
       <section id="add-course" class="admin-card">
-        <h2 style="font-size: 24px; margin-bottom: 32px;">Add New Course</h2>
+        <h2 style="font-family: var(--font-serif); font-size: 24px; color: var(--text-primary); margin-bottom: 32px;">Add New Course</h2>
         
         <form>
           <div class="form-grid">
@@ -264,7 +265,7 @@
             </div>
             
             <div class="form-group full" style="margin-bottom: 0;">
-              <button type="button" id="publishCourseBtn" class="btn btn-primary" style="width: 100%; height: 56px;">Publish Course</button>
+              <button type="button" id="publishCourseBtn" class="btn btn--primary" style="width: 100%;">Publish Course</button>
             </div>
             
           </div>
@@ -273,7 +274,7 @@
 
       <!-- ADD SESSION SECTION -->
       <section id="add-session" class="admin-card">
-        <h2 style="font-size: 24px; margin-bottom: 32px;">Schedule Live Session</h2>
+        <h2 style="font-family: var(--font-serif); font-size: 24px; color: var(--text-primary); margin-bottom: 32px;">Schedule Live Session</h2>
         
         <form>
           <div class="form-grid">
@@ -294,7 +295,7 @@
             </div>
             
             <div class="form-group full" style="margin-bottom: 0;">
-              <button type="button" class="btn btn-primary" style="width: 100%; height: 56px;">Schedule Session</button>
+              <button type="button" class="btn btn--primary" style="width: 100%;">Schedule Session</button>
             </div>
             
           </div>
@@ -303,7 +304,7 @@
 
       <!-- MANAGE COURSES -->
       <section class="admin-card">
-        <h2 style="font-size: 24px; margin-bottom: 24px;">Manage Existing Content</h2>
+        <h2 style="font-family: var(--font-serif); font-size: 24px; color: var(--text-primary); margin-bottom: 24px;">Manage Existing Content</h2>
         
         <div style="overflow-x: auto;">
           <table class="admin-table">

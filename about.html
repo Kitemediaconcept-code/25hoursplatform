@@ -1,274 +1,184 @@
-﻿<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Story & Philosophy — 25 Hours Platform</title>
-  <meta name="description" content="Discover the philosophy of 25 Hours. Learn how we help modern professionals find that 25th hour in the day to master technology, design, and business.">
-  
-  <!-- SEO Keywords, Canonical & Open Graph metadata -->
-  <meta name="keywords" content="about us, practitioner philosophy, 25 hours platform, brand values, startup roadmap, learning culture">
-  <link rel="canonical" href="https://25hoursplatform.com/about.html">
-  <meta property="og:title" content="Our Story & Philosophy — 25 Hours">
-  <meta property="og:description" content="Learn how we help modern professionals find their 25th hour to master modern tech, UI/UX, and business.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://25hoursplatform.com/about.html">
-  <meta property="og:image" content="assets/images/og-share.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Our Story & Philosophy — 25 Hours">
+  <title>Our Story — 25 Hours Platform</title>
+  <meta name="description" content="Discover the philosophy of 25 Hours. Learn how we help modern professionals find that 25th hour in the day.">
   
   <link rel="stylesheet" href="assets/css/style.css">
-  
-  <!-- JSON-LD Structured Data Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "About 25 Hours Platform",
-    "description": "Learn about our practitioner-led, portfolio-first educational philosophy.",
-    "url": "https://25hoursplatform.com/about.html",
-    "publisher": {
-      "@type": "Organization",
-      "name": "25 Hours",
-      "url": "https://25hoursplatform.com/"
-    }
-  }
-  </script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- GLOBAL NAV BAR -->
-  <nav id="navbar">
-    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
-    <ul class="nav-links">
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="nav">
+    <a class="nav__logo" href="index.html">
+      <img src="assets/images/logo.png" alt="25 Hours" class="nav__logo-img">
+    </a>
+    <ul class="nav__links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
+      <li><a href="instructors.html">Instructors</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="about.html" class="active">About</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="nav-right">
-      <button class="theme-toggle" id="themeToggler" aria-label="Toggle visual theme">
-        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-      </button>
-      <a href="login.html" class="btn btn-ghost">Log in</a>
-      <a href="dashboard.html" class="btn btn-primary">Dashboard</a>
-      <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
+    <div class="nav__right">
+      <a href="login.html" class="btn btn--text">Log in</a>
+      <a href="dashboard.html" class="btn btn--ghost">Dashboard</a>
+      <button class="nav__hamburger" id="hamburgerBtn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
     </div>
   </nav>
 
-  <!-- MOBILE NAV OVERLAY -->
-  <div class="mobile-nav-overlay" id="mobileNav">
-    <ul class="mobile-nav-links">
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
+      <li><a href="instructors.html">Instructors</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
       <li><a href="login.html">Log In</a></li>
-      <li><a href="dashboard.html">Student Dashboard</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
     </ul>
   </div>
+
   <main>
-
-  <!-- ABOUT HERO SECTION -->
-  <header class="cd-header-wrap" style="background: var(--hero-grid-radial); border-bottom: 1px solid var(--border-color); padding: 80px 0 60px;">
-    <div class="container">
-      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-        <ul class="breadcrumbs" style="justify-content: center;">
-          <li><a href="index.html">Home</a></li>
-          <li>/</li>
-          <li><a href="about.html" style="color: var(--text-main);">Our Story</a></li>
-        </ul>
-        <div class="eyebrow hero-animate hero-animate-1" style="margin: 0 auto 20px;">The 25th Hour Philosophy</div>
-        <h1 class="brand-font hero-animate hero-animate-2" style="font-size: clamp(32px, 5vw, 48px); font-weight: 800; letter-spacing: -1.2px; line-height: 1.1; margin-bottom: 16px;">We help modern professionals find their extra hour.</h1>
-        <p class="hero-animate hero-animate-3" style="color: var(--text-muted); font-size: 16px; line-height: 1.6;">Traditional curricula are slow and outdated. 25 Hours is built by real-world practitioners who ship software, scale companies, and design interfaces daily. We give you tactical growth path sprints.</p>
+    <!-- HERO SECTION -->
+    <div class="page-hero" style="padding: 160px 0 100px;">
+      <div class="container text-center reveal">
+        <div class="eyebrow" style="margin: 0 auto 24px;">The 25th Hour Philosophy</div>
+        <h1 class="page-hero__title" style="max-width: 900px; margin: 0 auto 32px;">We help modern professionals find their <em>extra hour</em>.</h1>
+        <p class="page-hero__sub" style="max-width: 700px; margin: 0 auto;">Traditional curricula are slow and outdated. 25 Hours is built by real-world practitioners who ship software, scale companies, and design interfaces daily. We give you tactical growth path sprints.</p>
       </div>
     </div>
-  </header>
 
-  <!-- METRICS ROW (STATS COUNTER) -->
-  <section class="section-container" style="border-bottom: 1px solid var(--border-color); padding: 48px 0;">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; text-align: center;">
-        <div class="" data-aos="fade-up">
-          <div class="stat-counter brand-font" style="font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: var(--primary-color);">45,000+</div>
-          <p style="font-size: 13.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-top: 8px;">Active Professionals</p>
-        </div>
-        <div class=" delay-100" data-aos="fade-up">
-          <div class="stat-counter brand-font" style="font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: var(--accent-teal);">120+</div>
-          <p style="font-size: 13.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-top: 8px;">Practitioner Guides</p>
-        </div>
-        <div class=" delay-200" data-aos="fade-up">
-          <div class="stat-counter brand-font" style="font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: var(--accent-amber);">98.4%</div>
-          <p style="font-size: 13.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-top: 8px;">Completion Rate</p>
+    <!-- STATS -->
+    <section class="section" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 64px 0; background: var(--bg-surface);">
+      <div class="container reveal">
+        <div class="flex" style="justify-content: space-around; flex-wrap: wrap; gap: 40px; text-align: center;">
+          
+          <div>
+            <div class="stat-counter" style="font-family: var(--font-serif); font-size: 48px; color: var(--gold); margin-bottom: 8px;">45k+</div>
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-secondary);">Active Members</div>
+          </div>
+          
+          <div>
+            <div class="stat-counter" style="font-family: var(--font-serif); font-size: 48px; color: var(--gold); margin-bottom: 8px;">120+</div>
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-secondary);">Practitioner Guides</div>
+          </div>
+          
+          <div>
+            <div class="stat-counter" style="font-family: var(--font-serif); font-size: 48px; color: var(--gold); margin-bottom: 8px;">98%</div>
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-secondary);">Success Rate</div>
+          </div>
+
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- DUAL COLUMN PHILOSOPHY -->
-  <section class="section-container">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;" class="" data-aos="fade-up">
-        <div>
-          <h2 class="brand-font" style="font-size: clamp(24px, 4vw, 32px); font-weight: 800; letter-spacing: -0.8px; margin-bottom: 20px; line-height: 1.2;">Designed for the 25th Hour</h2>
-          <p style="color: var(--text-muted); font-size: 15px; line-height: 1.6; margin-bottom: 16px;">We believe that everyone has an extra hour hidden in their daily routine. By eliminating fluff, pre-recorded drone courses, and academic gatekeeping, we help you capture that hour and convert it into career-defining skills.</p>
-          <p style="color: var(--text-muted); font-size: 15px; line-height: 1.6;">Our methodology focuses on extreme utility: short, punchy practitioner-led cohorts, robust git-based capstone portfolios, and active peer reviews. When you graduate, you don't just get a PDF credential—you get a validated repository that proves you can build real products.</p>
+    <!-- CONTENT DUAL COLUMN -->
+    <section class="section container">
+      <div class="flex" style="gap: 80px; align-items: center;">
+        
+        <div class="reveal" style="flex: 1;">
+          <h2 class="section-title">Designed for the <em>25th Hour</em></h2>
+          <p style="font-size: 16px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 24px;">We believe that everyone has an extra hour hidden in their daily routine. By eliminating fluff, pre-recorded drone courses, and academic gatekeeping, we help you capture that hour and convert it into career-defining skills.</p>
+          <p style="font-size: 16px; color: var(--text-secondary); line-height: 1.7;">Our methodology focuses on extreme utility: short, punchy practitioner-led cohorts, robust capstone portfolios, and active peer reviews. When you graduate, you don't just get a credential—you get a validated repository that proves you can build real products.</p>
         </div>
-        <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-glow);">
-          <h3 class="brand-font" style="font-size: 20px; font-weight: 700; color: var(--text-main); margin-bottom: 24px;">Our Core Promises</h3>
-          <ul class="pricing-features" style="text-align: left; display: flex; flex-direction: column; gap: 20px;">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2.5" style="width: 20px; height: 20px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+
+        <div class="reveal reveal-delay-1" style="flex: 1; padding: 48px; border: 1px solid var(--border-gold); background: var(--bg-surface);">
+          <h3 style="font-family: var(--font-serif); font-size: 24px; color: var(--gold); margin-bottom: 32px;">Our Core Promises</h3>
+          
+          <div class="flex-col gap-24">
+            <div class="flex gap-16 items-start">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <div>
-                <strong style="color: var(--text-main); display: block; font-size: 15px; margin-bottom: 2px;">Action Over Theory</strong>
-                <span style="color: var(--text-muted); font-size: 13.5px;">No multi-hour slides. We write code, design layout grids, and build pricing spreadsheets.</span>
+                <strong style="display: block; font-size: 16px; color: var(--text-primary); margin-bottom: 4px;">Action Over Theory</strong>
+                <span style="font-size: 14px; color: var(--text-secondary); line-height: 1.5;">No multi-hour slides. We write code, design layout grids, and build pricing spreadsheets.</span>
               </div>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-teal)" stroke-width="2.5" style="width: 20px; height: 20px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            
+            <div class="flex gap-16 items-start">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <div>
-                <strong style="color: var(--text-main); display: block; font-size: 15px; margin-bottom: 2px;">Practitioner Led</strong>
-                <span style="color: var(--text-muted); font-size: 13.5px;">All guides are active team leaders, senior engineers, and startup founders in leading tech brands.</span>
+                <strong style="display: block; font-size: 16px; color: var(--text-primary); margin-bottom: 4px;">Practitioner Led</strong>
+                <span style="font-size: 14px; color: var(--text-secondary); line-height: 1.5;">All guides are active team leaders, senior engineers, and startup founders in leading tech brands.</span>
               </div>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2.5" style="width: 20px; height: 20px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+
+            <div class="flex gap-16 items-start">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" style="flex-shrink: 0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <div>
-                <strong style="color: var(--text-main); display: block; font-size: 15px; margin-bottom: 2px;">Credential Transparency</strong>
-                <span style="color: var(--text-muted); font-size: 13.5px;">Each digital certificate links to a public capstone repository hosted securely on our platform.</span>
+                <strong style="display: block; font-size: 16px; color: var(--text-primary); margin-bottom: 4px;">Credential Transparency</strong>
+                <span style="font-size: 14px; color: var(--text-secondary); line-height: 1.5;">Each digital certificate links to a public capstone hosted securely on our platform.</span>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="cta-band reveal">
+      <div class="container">
+        <h2 class="cta-band__title">Join the pursuit of excellence.</h2>
+        <p class="cta-band__sub">Become an instructor or a student. Elevate your craft today.</p>
+        <div class="cta-band__actions">
+          <a href="contact.html" class="btn btn--outline btn--lg">Become Instructor</a>
+          <a href="pricing.html" class="btn btn--primary btn--lg">Get Started</a>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- HOW IT WORKS TIMELINE (REUSING STYLES) -->
-  <section class="section-container" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
-    <div class="container">
-      <div style="text-align: center; margin-bottom: 56px;" class="" data-aos="fade-up">
-        <h2 class="brand-font" style="font-size: clamp(24px, 4vw, 32px); font-weight: 800; letter-spacing: -0.8px; margin-bottom: 12px;">Our Journey of Limits</h2>
-        <p style="color: var(--text-muted); font-size: 15px; max-width: 600px; margin: 0 auto;">From a small newsletter to India's premier practitioner-first career platform.</p>
-      </div>
-
-      <div class="how-grid">
-        <!-- Milestone 1 -->
-        <div class="how-card " data-aos="fade-up">
-          <span class="how-num">2024</span>
-          <div class="how-icon">🌱</div>
-          <h3>The Genesis</h3>
-          <p>Started as a tactical email list sharing weekly code optimization and design checklists. Reached 10,000 active subscribers in three months.</p>
-        </div>
-
-        <!-- Milestone 2 -->
-        <div class="how-card delay-100" data-aos="fade-up">
-          <span class="how-num" style="color: var(--accent-teal); background: var(--accent-teal-light);">2025</span>
-          <div class="how-icon">🚀</div>
-          <h3>Cohort Expansion</h3>
-          <p>Launched three intensive web development and UI/UX design pilot groups. Witnessed 98% course completion and immediate career upgrades.</p>
-        </div>
-
-        <!-- Milestone 3 -->
-        <div class="how-card delay-200" data-aos="fade-up">
-          <span class="how-num" style="color: var(--accent-amber); background: var(--accent-amber-light);">2026</span>
-          <div class="how-icon">💎</div>
-          <h3>Practitioner Network</h3>
-          <p>Evolved into a complete platform with verified digital credentials, enterprise cohorts, and 120+ lead tech mentors from top startups.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA BAND -->
-  <div class="cta-section">
-    <div class="container">
-      <div class="cta-band " data-aos="fade-up">
-        <div class="cta-left">
-          <h2 class="cta-title">Ready to grow? Join 25 Hours today.</h2>
-          <p class="cta-sub">Start free. Upgrade anytime. Cancel whenever you want.</p>
-        </div>
-        <div class="cta-btns">
-          <a href="contact.html" class="btn btn-hero-outline">Become Instructor</a>
-          <a href="login.html" class="btn btn-hero">Start Learning →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MULTI-COLUMN MODERN FOOTER -->
   </main>
+
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img footer-logo-img"></a>
-          <p>India's leading practitioner-first learning platform for modern professionals.</p>
+          <img src="assets/images/logo.png" alt="25 Hours" style="height: 24px; filter: invert(1);">
+          <p>The premium learning platform for modern professionals.</p>
           <div class="footer-socials">
-            <a href="#" class="social-icon" aria-label="Twitter">🕊</a>
-            <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
-            <a href="#" class="social-icon" aria-label="YouTube">📺</a>
+            <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
           </div>
         </div>
         
-        <div class="footer-column">
-          <h3>Ecosystem</h3>
-          <ul class="footer-links-list">
-            <li><a href="courses.html">Browse Paths</a></li>
-            <li><a href="categories.html">Disciplines</a></li>
-            <li><a href="pricing.html">Memberships</a></li>
-            <li><a href="dashboard.html">Dashboard UI</a></li>
-          </ul>
+        <div class="footer-col">
+          <h3>Platform</h3>
+          <div class="footer-links">
+            <a href="courses.html">All Classes</a>
+            <a href="categories.html">Categories</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="pricing.html">Memberships</a>
+          </div>
         </div>
         
-        <div class="footer-column">
+        <div class="footer-col">
           <h3>Company</h3>
-          <ul class="footer-links-list">
-            <li><a href="about.html">Our Story</a></li>
-            <li><a href="instructors.html">Instructors</a></li>
-            <li><a href="blog.html">Insights Blog</a></li>
-            <li><a href="contact.html">Support</a></li>
-          </ul>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="blog.html">Journal</a>
+            <a href="contact.html">Contact</a>
+          </div>
         </div>
         
-        <div class="footer-column">
+        <div class="footer-col">
           <h3>Support</h3>
-          <ul class="footer-links-list">
-            <li><a href="faq.html">FAQ Center</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="terms.html">Privacy Rules</a></li>
-            <li><a href="404.html">404 Error</a></li>
-          </ul>
+          <div class="footer-links">
+            <a href="faq.html">Help Center</a>
+            <a href="login.html">Sign In</a>
+            <a href="dashboard.html">Dashboard</a>
+          </div>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <span class="footer-copy">© 2026 25 Hours Platform. Production-Ready EdTech.</span>
-        <div class="footer-legal-links">
+        <div class="footer-copy">© 2026 25 Hours Platform. All rights reserved.</div>
+        <div class="footer-legal">
           <a href="terms.html">Terms of Service</a>
           <a href="terms.html">Privacy Policy</a>
         </div>
@@ -277,6 +187,5 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

@@ -1,164 +1,112 @@
-﻿<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Access Your Workspace — 25 Hours Platform</title>
   <meta name="description" content="Log in or register your student account. Access your metrics, active cohorts, code reviews, and verified practitioner credentials.">
   
-  <!-- SEO Keywords, Canonical & Open Graph metadata -->
-  <meta name="keywords" content="student login, registration, platform signup, workspace login, edtech credentials">
-  <link rel="canonical" href="https://25hoursplatform.com/login.html">
-  <meta property="og:title" content="Access Your Workspace — 25 Hours">
-  <meta property="og:description" content="Log in or sign up to access your cohort paths and claims.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://25hoursplatform.com/login.html">
-  <meta property="og:image" content="assets/images/og-share.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Access Your Workspace — 25 Hours">
-  
   <link rel="stylesheet" href="assets/css/style.css">
-  
-  <!-- JSON-LD Structured Data Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Auth Center",
-    "description": "Secure portal access for student profiles and portfolio metrics.",
-    "url": "https://25hoursplatform.com/login.html"
-  }
-  </script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- GLOBAL NAV BAR -->
-  <nav id="navbar">
-    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
-    <ul class="nav-links">
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="nav">
+    <a class="nav__logo" href="index.html">
+      <img src="assets/images/logo.png" alt="25 Hours" class="nav__logo-img">
+    </a>
+    <ul class="nav__links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
+      <li><a href="instructors.html">Instructors</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="nav-right">
-      <button class="theme-toggle" id="themeToggler" aria-label="Toggle visual theme">
-        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-      </button>
-      <a href="login.html" class="btn btn-ghost active">Log in</a>
-      <a href="dashboard.html" class="btn btn-primary">Dashboard</a>
-      <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
+    <div class="nav__right">
+      <a href="login.html" class="btn btn--text active">Log in</a>
+      <a href="dashboard.html" class="btn btn--ghost">Dashboard</a>
+      <button class="nav__hamburger" id="hamburgerBtn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
     </div>
   </nav>
 
-  <!-- MOBILE NAV OVERLAY -->
-  <div class="mobile-nav-overlay" id="mobileNav">
-    <ul class="mobile-nav-links">
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
+      <li><a href="instructors.html">Instructors</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
       <li><a href="login.html">Log In</a></li>
-      <li><a href="dashboard.html">Student Dashboard</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
     </ul>
   </div>
-  <main>
 
-  <!-- AUTH MAIN CONTAINER -->
-  <main class="auth-container" style="background: var(--hero-grid-radial);">
-    <div class="auth-card " data-aos="fade-up">
-      <!-- Tabs header toggle switchers -->
+  <main style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 120px 24px; position: relative; background-image: radial-gradient(var(--border-gold) 1px, transparent 1px); background-size: 24px 24px;">
+    
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 50% 0%, rgba(201, 162, 39, 0.05) 0%, transparent 60%); pointer-events: none;"></div>
+
+    <div class="auth-card reveal" style="position: relative; z-index: 10;">
+      
+      <!-- TABS -->
       <div class="auth-tabs">
         <button class="auth-tab active" data-form="loginForm">Log In</button>
         <button class="auth-tab" data-form="registerForm">Register</button>
       </div>
 
-      <!-- Tab 1: Log In -->
+      <!-- LOG IN FORM -->
       <form id="loginForm" class="auth-form active" action="dashboard.html">
-        <div class="form-group">
+        <div style="margin-bottom: 24px;">
           <label class="form-label" for="loginEmail">Email Address</label>
-          <input type="email" id="loginEmail" class="form-input" placeholder="rahul@example.com" required autocomplete="email">
+          <input type="email" id="loginEmail" class="form-input" placeholder="rahul@example.com" required>
         </div>
 
-        <div class="form-group">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-            <label class="form-label" for="loginPassword" style="margin-bottom:0;">Password</label>
-            <a href="faq.html" style="font-size:12px; color:var(--primary-color); text-decoration:none;">Forgot?</a>
+        <div style="margin-bottom: 24px;">
+          <div class="flex justify-between items-center" style="margin-bottom: 8px;">
+            <label class="form-label" for="loginPassword" style="margin-bottom: 0;">Password</label>
+            <a href="faq.html" style="font-size: 12px; color: var(--gold); text-decoration: none;">Forgot?</a>
           </div>
-          <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required autocomplete="current-password">
+          <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required>
         </div>
 
-        <div class="form-group" style="display:flex; align-items:center; gap:8px; margin-bottom:32px;">
-          <input type="checkbox" id="rememberMe" style="width:16px; height:16px; accent-color:var(--primary-color);">
-          <label for="rememberMe" style="font-size:13.5px; color:var(--text-muted); cursor:pointer;">Remember me for 30 days</label>
+        <div class="flex items-center gap-8" style="margin-bottom: 32px;">
+          <input type="checkbox" id="rememberMe" style="width: 16px; height: 16px; accent-color: var(--gold); cursor: pointer;">
+          <label for="rememberMe" style="font-size: 13px; color: var(--text-secondary); cursor: pointer;">Remember me for 30 days</label>
         </div>
 
-        <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In →</button>
+        <button type="submit" class="btn btn--primary w-full">Sign In</button>
       </form>
 
-      <!-- Tab 2: Register -->
+      <!-- REGISTER FORM -->
       <form id="registerForm" class="auth-form" action="dashboard.html">
-        <div class="form-group">
+        <div style="margin-bottom: 24px;">
           <label class="form-label" for="regName">Full Name</label>
-          <input type="text" id="regName" class="form-input" placeholder="Rahul Sharma" required autocomplete="name">
+          <input type="text" id="regName" class="form-input" placeholder="Rahul Sharma" required>
         </div>
 
-        <div class="form-group">
+        <div style="margin-bottom: 24px;">
           <label class="form-label" for="regEmail">Email Address</label>
-          <input type="email" id="regEmail" class="form-input" placeholder="rahul@example.com" required autocomplete="email">
+          <input type="email" id="regEmail" class="form-input" placeholder="rahul@example.com" required>
         </div>
 
-        <div class="form-group">
+        <div style="margin-bottom: 24px;">
           <label class="form-label" for="regPassword">Password</label>
-          <input type="password" id="regPassword" class="form-input" placeholder="Minimum 8 characters" required autocomplete="new-password" minlength="8">
+          <input type="password" id="regPassword" class="form-input" placeholder="Minimum 8 characters" required minlength="8">
         </div>
 
-        <div class="form-group" style="display:flex; align-items:center; gap:8px; margin-bottom:32px;">
-          <input type="checkbox" id="agreeTerms" style="width:16px; height:16px; accent-color:var(--primary-color);" required>
-          <label for="agreeTerms" style="font-size:13.5px; color:var(--text-muted); cursor:pointer;">I agree to the <a href="terms.html" style="color:var(--primary-color); text-decoration:none;">Terms & Policies</a></label>
+        <div class="flex items-center gap-8" style="margin-bottom: 32px;">
+          <input type="checkbox" id="agreeTerms" style="width: 16px; height: 16px; accent-color: var(--gold); cursor: pointer;" required>
+          <label for="agreeTerms" style="font-size: 13px; color: var(--text-secondary); cursor: pointer;">I agree to the <a href="terms.html" style="color: var(--gold); text-decoration: none;">Terms & Policies</a></label>
         </div>
 
-        <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account →</button>
+        <button type="submit" class="btn btn--primary w-full">Create Account</button>
       </form>
+
     </div>
   </main>
 
-  <!-- SMALLER LEGAL FOOTER FOR AUTH PAGE -->
-  <footer style="padding: 32px 0; background: var(--bg-secondary); border-top: 1px solid var(--border-color);">
-    <div class="container" style="text-align: center;">
-      <span class="footer-copy">© 2026 25 Hours Platform. Production-Ready EdTech.</span>
-      <div class="footer-legal-links" style="justify-content: center; margin-top: 8px;">
-        <a href="terms.html">Terms of Service</a>
-        <a href="terms.html">Privacy Policy</a>
-      </div>
-    </div>
-  </footer>
-
   <script src="assets/js/main.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

@@ -26,3 +26,5 @@ jspm_packages/
 
 # Vercel CLI cache
 .vercel/
+
+.vercel
