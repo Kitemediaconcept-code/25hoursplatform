@@ -48,7 +48,7 @@
   /* Spacing */
   --section-py: 140px;
   --container:  1280px;
-  --nav-height: 80px;
+  --nav-height: 100px;
 
   /* Radius */
   --radius-sm:   6px;
@@ -150,7 +150,7 @@ ul, ol { list-style: none; }
 }
 
 .nav__logo-img {
-  height: 56px;
+  height: 90px;
   width: auto;
   filter: brightness(0) invert(1);
   transition: opacity var(--t-fast);
