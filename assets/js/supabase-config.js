@@ -12,8 +12,8 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
 // ─── Replace these two values with your Supabase project credentials ───────
-const SUPABASE_URL      = 'YOUR_SUPABASE_URL';       // e.g. https://abcxyz.supabase.co
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';  // long JWT string (safe to expose)
+const SUPABASE_URL      = 'https://zwubvbyrkqqkedghndbt.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_gxdfQnU9FPJGvkafhvvQBA_ld41rQpE';
 // ──────────────────────────────────────────────────────────────────────────
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
