@@ -422,7 +422,7 @@ section {
 }
 
 .hero-title{
-    font-size:clamp(42px, 8vw, 84px);
+    font-size:clamp(40px, 6vw, 72px);
     line-height:1.05;
     letter-spacing:-3px;
     font-weight:800;
