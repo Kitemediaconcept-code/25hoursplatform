@@ -481,125 +481,186 @@ ul, ol { list-style: none; }
     letter-spacing:.5px;
 }
 
-/* RIGHT SIDE */
+/* RIGHT HERO SECTION */
 
 .hero-right{
     position:relative;
+    width:100%;
+    height:650px;
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
+    overflow:hidden;
 }
 
-/* CARD WRAPPER */
+/* SLIDER */
 
-.card-wrapper{
-    display:flex;
-    gap:22px;
+.card-slider{
+    position:relative;
     width:100%;
-    overflow:hidden;
+    height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 /* CARDS */
 
-.course-card{
-    position:relative;
-    min-width:240px;
-    height:520px;
-    border-radius:28px;
+.slide-card{
+    position:absolute;
+    width:420px;
+    height:260px;
+    border-radius:32px;
     overflow:hidden;
-    background:#111;
-    transition:.5s;
+    transition:0.8s cubic-bezier(.22,1,.36,1);
     cursor:pointer;
-    animation:slideUp 1s ease;
+    box-shadow:0 20px 60px rgba(0,0,0,0.5);
 }
 
-.course-card:hover{
-    transform:translateY(-12px);
-}
+/* IMAGE */
 
-.course-card img{
+.slide-card img{
     width:100%;
     height:100%;
     object-fit:cover;
+    transition:1s;
 }
 
-.card-overlay{
+.slide-card:hover img{
+    transform:scale(1.06);
+}
+
+/* OVERLAY */
+
+.slide-overlay{
     position:absolute;
     inset:0;
-    background:linear-gradient(to top, rgba(0,0,0,0.95), transparent 60%);
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.1)
+    );
 }
 
-.card-content{
+/* CARD CONTENT */
+
+.slide-content{
     position:absolute;
-    bottom:28px;
-    left:24px;
-    right:24px;
+    left:28px;
+    right:28px;
+    bottom:26px;
+    z-index:2;
 }
 
-.card-content h4{
-    font-size:24px;
-    margin-bottom:8px;
+.slide-title{
+    font-size:42px;
+    font-weight:800;
+    line-height:1;
+    margin-bottom:18px;
+    letter-spacing:-1px;
+}
+
+.slide-info{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.slide-info-left h4{
+    font-size:20px;
+    margin-bottom:4px;
     font-weight:700;
 }
 
-.card-content p{
-    color:#c4c4c4;
-    font-size:15px;
-    line-height:1.5;
+.slide-info-left p{
+    color:#c9c9c9;
+    font-size:14px;
 }
 
-/* DIFFERENT CARD HEIGHTS */
+/* BUTTON */
 
-.course-card:nth-child(2){
-    margin-top:40px;
+.design-btn{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.15);
+    color:#fff;
+    padding:12px 20px;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:600;
 }
 
-.course-card:nth-child(3){
-    margin-top:80px;
+/* ACTIVE CENTER CARD */
+
+.slide-card.active{
+    transform:translateX(0) scale(1);
+    z-index:5;
+    opacity:1;
+    filter:blur(0px);
 }
 
-/* ANIMATION */
+/* LEFT CARD */
 
-@keyframes fadeUp{
-    from{ opacity:0; transform:translateY(50px); }
-    to{ opacity:1; transform:translateY(0); }
+.slide-card.prev{
+    transform:translateX(-320px) scale(0.78);
+    opacity:0.35;
+    z-index:2;
+    filter:blur(2px);
 }
 
-@keyframes slideUp{
-    from{ opacity:0; transform:translateY(80px); }
-    to{ opacity:1; transform:translateY(0); }
+/* RIGHT CARD */
+
+.slide-card.next{
+    transform:translateX(320px) scale(0.78);
+    opacity:0.35;
+    z-index:2;
+    filter:blur(2px);
 }
 
-/* TABLET */
+/* HIDDEN CARDS */
+
+.slide-card.hidden{
+    transform:scale(0.6);
+    opacity:0;
+    z-index:1;
+}
+
+/* RESPONSIVE DESIGN */
 
 @media(max-width:1100px){
     .hero-title{ font-size:58px; }
     .hero-container{ gap:40px; }
-    .course-card{ min-width:200px; height:440px; }
 }
 
-/* MOBILE */
+@media(max-width:900px){
+    .hero-right{ height:480px; margin-top:20px; }
+    .slide-card{ width:340px; height:220px; }
+    .slide-title{ font-size:32px; }
+    .slide-card.prev{ transform:translateX(-180px) scale(0.8); }
+    .slide-card.next{ transform:translateX(180px) scale(0.8); }
+}
 
 @media(max-width:850px){
     .hero{ padding-top:calc(var(--nav-height) + 40px); padding-bottom:80px; }
     .hero-container{ grid-template-columns:1fr; }
     .hero-title{ font-size:48px; }
     .hero-description{ font-size:16px; }
-    .hero-right{ margin-top:20px; }
-    .card-wrapper{ overflow-x:auto; padding-bottom:10px; }
-    .card-wrapper::-webkit-scrollbar{ display:none; }
-    .course-card{ min-width:240px; height:420px; }
-    .course-card:nth-child(2), .course-card:nth-child(3){ margin-top:0; }
 }
 
-/* SMALL MOBILE */
-
-@media(max-width:500px){
+@media(max-width:600px){
+    .hero-right{ height:420px; }
+    .slide-card{ width:100%; max-width:320px; height:200px; border-radius:24px; }
+    .slide-title{ font-size:28px; }
+    .slide-info{ flex-direction:column; align-items:flex-start; }
+    .design-btn{ padding:10px 16px; font-size:13px; }
+    .slide-card.prev{ transform:translateX(-110px) scale(0.78); opacity:0.15; }
+    .slide-card.next{ transform:translateX(110px) scale(0.78); opacity:0.15; }
     .hero-title{ font-size:40px; letter-spacing:-2px; }
     .hero-buttons{ flex-direction:column; align-items:flex-start; }
     .btn-primary, .btn-secondary{ width:100%; text-align:center; }
     .hero-features{ gap:16px; }
-    .course-card{ min-width:210px; height:360px; }
 }
 
 /* ─── LOGO STRIP ─────────────────────────────────────────────────────────── */
