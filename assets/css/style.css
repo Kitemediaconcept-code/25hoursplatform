@@ -492,6 +492,8 @@ ul, ol { list-style: none; }
     position:relative;
     height:760px;
     overflow:hidden;
+    mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
 }
 
 /* GRID */
