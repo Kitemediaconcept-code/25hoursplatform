@@ -331,6 +331,10 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.appendChild(toast);
       contactForm.reset();
 
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transition = 'opacity 0.5s ease';
+        setTimeout(() => toast.remove(), 500);
       }, 3000);
     });
   }
