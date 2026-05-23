@@ -41,7 +41,7 @@
   --shadow-gold: 0 0 40px rgba(200, 169, 110, 0.2);
 
   /* Typography */
-  --font-serif:  'Playfair Display', Georgia, serif;
+  --font-serif:  'Inter', system-ui, sans-serif;
   --font-sans:   'Inter', system-ui, sans-serif;
   --font-mono:   'Fragment Mono', monospace;
 
