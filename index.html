@@ -57,12 +57,13 @@
     ]
   }
   </script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- NAVIGATION HEADER -->
   <nav id="navbar">
-    <a class="logo" href="index.html">25<em>Hours</em></a>
+    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
@@ -113,89 +114,58 @@
       <li><a href="dashboard.html">Student Dashboard</a></li>
     </ul>
   </div>
-
-  <!-- HERO SECTION -->
-  <section class="hero-container">
-    <div class="container">
-      <div class="hero">
-        <div class="hero-left">
-          <div class="eyebrow hero-animate hero-animate-1">
-            <svg viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
-            Unlock your professional potential
-          </div>
-          <h1 class="hero-animate hero-animate-2">Learn Without<br><span class="accent">Limits</span></h1>
-          <p class="hero-sub hero-animate hero-animate-3">Master modern technology, design principles, and strategic business leadership. Build a resume backed by real-world capstones and verified institutional credentials.</p>
-          <div class="hero-actions hero-animate hero-animate-4">
-            <a href="login.html" class="btn btn-hero">Start Learning →</a>
-            <a href="courses.html" class="btn btn-hero-outline">Browse Courses</a>
-          </div>
-          <div class="trust-row hero-animate hero-animate-5">
-            <div class="trust-item">
-              <span class="trust-num">120+</span>
-              <span class="trust-label">Courses</span>
-            </div>
-            <div class="trust-item">
-              <span class="trust-num">40+</span>
-              <span class="trust-label">Experts</span>
-            </div>
-            <div class="trust-item">
-              <span class="trust-num">8,000+</span>
-              <span class="trust-label">Learners</span>
-            </div>
-            <div class="trust-item">
-              <span class="trust-num">15+</span>
-              <span class="trust-label">Institutions</span>
-            </div>
-          </div>
-        </div>
+  <main>  <!-- HERO SECTION (Lattice Inspired) -->
+  <section class="hero-container" style="padding-top: 80px; padding-bottom: 40px; overflow: hidden; background: var(--bg-primary);">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; max-width: 1200px;">
+      
+      <!-- Text Content -->
+      <div class="hero-center" style="max-width: 900px; margin: 0 auto; text-align: center;" data-aos="fade-up">
         
-        <div class="hero-right hero-animate hero-animate-3" id="mockupZone">
-          <div class="dashboard-mockup">
-            <!-- Widget 1: Live workshop card -->
-            <div class="mock-card card-main">
-              <div class="live-indicator">
-                <span class="live-dot"></span> Live Workshop
-              </div>
-              <h4>AI & Prompt Design for Founders</h4>
-              <p>Led by Priya Kumar · 140 enrolled right now</p>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 82%;"></div>
-              </div>
-              <div class="widget-footer">
-                <div class="avatars">
-                  <span class="avatar-img">RM</span>
-                  <span class="avatar-img">NP</span>
-                  <span class="avatar-img">AD</span>
-                </div>
-                <button class="join-btn" onclick="location.href='dashboard.html'">Join Classroom</button>
-              </div>
+        <h1 style="font-size: clamp(48px, 8vw, 88px); font-weight: 500; line-height: 1.05; letter-spacing: -0.04em; margin-bottom: 24px; color: var(--text-main); text-wrap: balance;">
+          Where Tech Careers<br>are Built.
+        </h1>
+        
+        <p class="hero-sub" style="font-size: clamp(18px, 3vw, 22px); color: var(--text-muted); line-height: 1.5; margin-bottom: 40px; max-width: 680px; margin-left: auto; margin-right: auto;">
+          We bring ideas to life by combining years of experience from our very talented team of industry practitioners.
+        </p>
+        
+        <div class="hero-actions" style="display: flex; gap: 16px; justify-content: center; align-items: center; margin-bottom: 64px; flex-wrap: wrap;">
+          <a href="courses.html" class="btn btn-primary" style="padding: 0 40px; height: 60px; background: #000; color: #fff; border-radius: 40px; display: inline-flex; align-items: center; gap: 12px; font-weight: 500; text-transform: none; letter-spacing: 0;">
+            Build career 
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+          </a>
+          <a href="contact.html" class="btn btn-outline" style="padding: 0 40px; height: 60px; background: transparent; color: #000; border: 1px solid #e5e7eb; border-radius: 40px; display: inline-flex; align-items: center; gap: 12px; font-weight: 500; text-transform: none; letter-spacing: 0;">
+            Contact us
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Large Image Container (Lattice Style) -->
+      <div style="width: 100%; position: relative;" data-aos="fade-up" data-aos-delay="200">
+        <div style="position: relative; width: 100%; padding-top: 45%; background: #e5e0d8; border-radius: 32px; overflow: hidden;">
+          <img src="assets/images/hero-person.png" alt="Professional working" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" loading="eager">
+          
+          <!-- Floating UI Elements over image -->
+          <div style="position: absolute; top: 40px; left: 40px; background: rgba(255,255,255,0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 12px 24px; border-radius: 100px; display: flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 500;">
+            <div style="width: 24px; height: 24px; background: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
             </div>
-            
-            <!-- Widget 2: Skill Index chart -->
-            <div class="mock-card card-stats">
-              <div class="stat-header">
-                <span class="stat-label">Active Skill Index</span>
-                <span class="stat-num">+42%</span>
-              </div>
-              <svg class="sparkline" viewBox="0 0 100 40">
-                <path class="sparkline-bg" d="M0,40 L0,25 Q15,10 30,22 T60,5 T90,12 L100,20 L100,40 Z"></path>
-                <path d="M0,25 Q15,10 30,22 T60,5 T90,12 L100,20"></path>
-              </svg>
-            </div>
-            
-            <!-- Widget 3: Badge credentials -->
-            <div class="mock-card card-badge">
-              <div class="badge-icon">★</div>
-              <div>
-                <p class="badge-text">Verified Credentials</p>
-                <p class="badge-sub">Institutional Recognition</p>
-              </div>
-            </div>
+            Building career
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </div>
+
+          <div style="position: absolute; top: 40px; right: 40px; background: rgba(255,255,255,0.3); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 12px 24px; border-radius: 100px; color: #fff; font-size: 14px; font-weight: 500;">
+            Match yours
+          </div>
+
+          <div style="position: absolute; left: 40px; bottom: 40px; color: #fff;">
+            <p style="font-size: 14px; opacity: 0.8; margin-bottom: 8px;">Job Opportunities</p>
+            <h2 style="font-size: 32px; font-weight: 500; max-width: 400px; line-height: 1.2;">Efficiently transform your candidate experience.</h2>
           </div>
         </div>
       </div>
+      
     </div>
   </section>
 
@@ -204,10 +174,10 @@
     <div class="container" style="text-align: center;">
       <p style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-faint); margin-bottom: 24px;">TRUSTED BY INDUSTRY AND LEADING VENTURES</p>
       <div class="partner-strip" style="justify-content: center; gap: 32px; opacity: 0.7;">
-        <span style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px; color: var(--text-muted);">Dot Intelligence</span>
-        <span style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px; color: var(--text-muted);">Headword Business</span>
-        <span style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px; color: var(--text-muted);">Council of Education</span>
-        <span style="font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px; color: var(--text-muted);">25H Foundation</span>
+        <span style="font-family: 'Fragment Mono', monospace; font-weight: 800; font-size: 18px; color: var(--text-muted);">Dot Intelligence</span>
+        <span style="font-family: 'Fragment Mono', monospace; font-weight: 800; font-size: 18px; color: var(--text-muted);">Headword Business</span>
+        <span style="font-family: 'Fragment Mono', monospace; font-weight: 800; font-size: 18px; color: var(--text-muted);">Council of Education</span>
+        <span style="font-family: 'Fragment Mono', monospace; font-weight: 800; font-size: 18px; color: var(--text-muted);">25H Foundation</span>
       </div>
     </div>
   </div>
@@ -216,13 +186,13 @@
   <section class="section-container" id="courses">
     <div class="container">
       <div class="section">
-        <div class="section-header reveal">
+        <div class="section-header " data-aos="fade-up">
           <p class="sec-eyebrow">FEATURED COURSES</p>
           <h2 class="sec-title">Start learning today</h2>
           <p class="sec-sub">Handpicked from platform originals, institutional partners, and expert collaborators.</p>
         </div>
         
-        <div class="cat-strip reveal">
+        <div class="cat-strip " data-aos="fade-up">
           <button class="cat active" onclick="filterHomeCat(this,'all')">All</button>
           <button class="cat" onclick="filterHomeCat(this,'business')">Business</button>
           <button class="cat" onclick="filterHomeCat(this,'marketing')">Marketing</button>
@@ -232,207 +202,28 @@
           <button class="cat" onclick="filterHomeCat(this,'design')">Design</button>
         </div>
         
-        <div class="course-grid reveal" id="courseGrid">
-          <!-- Course Card 1 -->
-          <a class="c-card" data-cat="business" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-purple-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
-                <polyline points="16 7 22 7 22 13"></polyline>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Business</p>
-              <h3 class="c-name">Startup to scale: building your first venture</h3>
-              <p class="c-by">Rahul Menon · 6 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹1,499</span>
-                <span class="pill pill-teal">Certificate</span>
-              </div>
-            </div>
-          </a>
-          
-          <!-- Course Card 2 -->
-          <a class="c-card" data-cat="marketing" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-teal-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 11l19-9-9 19-2-8-8-2z"></path>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Marketing</p>
-              <h3 class="c-name">Digital marketing for growth-stage brands</h3>
-              <p class="c-by">Nisha Pillai · 4 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹999</span>
-                <span class="pill pill-teal">Certificate</span>
-              </div>
-            </div>
-          </a>
-          
-          <!-- Course Card 3 -->
-          <a class="c-card" data-cat="communication" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-amber-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
-                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                <line x1="12" y1="19" x2="12" y2="23"></line>
-                <line x1="8" y1="23" x2="16" y2="23"></line>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Communication</p>
-              <h3 class="c-name">Public speaking mastery for professionals</h3>
-              <p class="c-by">Arjun Das · 3 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">Free</span>
-                <span class="pill pill-amber">Workshop</span>
-              </div>
-            </div>
-          </a>
-          
-          <!-- Course Card 4 -->
-          <a class="c-card" data-cat="tech" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-blue-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="7" height="7"></rect>
-                <rect x="14" y="3" width="7" height="7"></rect>
-                <rect x="14" y="14" width="7" height="7"></rect>
-                <rect x="3" y="14" width="7" height="7"></rect>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Technology</p>
-              <h3 class="c-name">AI tools for modern business teams</h3>
-              <p class="c-by">Priya Kumar · 5 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹1,999</span>
-                <span class="pill pill-teal">Certificate</span>
-              </div>
-            </div>
-          </a>
-          
-          <!-- Course Card 5 -->
-          <a class="c-card" data-cat="finance" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-purple-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" y1="1" x2="12" y2="23"></line>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Finance</p>
-              <h3 class="c-name">Personal finance and wealth fundamentals</h3>
-              <p class="c-by">Arun Nair · 4 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹1,299</span>
-                <span class="pill pill-teal">Certificate</span>
-              </div>
-            </div>
-          </a>
-          
-          <!-- Course Card 6 -->
-          <a class="c-card" data-cat="design" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-teal-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3"></circle>
-                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Design</p>
-              <h3 class="c-name">Brand identity design for founders</h3>
-              <p class="c-by">Shreya Menon · 3 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹799</span>
-                <span class="pill pill-amber">Workshop</span>
-              </div>
-            </div>
-          </a>
+        <div class="course-grid " data-aos="fade-up" id="featuredCoursesContainer">
+          <div id="indexLoadingIndicator" style="grid-column: 1 / -1; text-align: center; padding: 48px; color: var(--text-muted);">
+            Loading latest courses...
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- COURSE CATEGORIES HUBS -->
-  <section class="section-container" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div class="section">
-        <div class="section-header reveal">
-          <p class="sec-eyebrow">DISCIPLINES</p>
-          <h2 class="sec-title">Explore by Domain</h2>
-          <p class="sec-sub">Select a custom ecosystem tailored precisely to your ultimate professional roadmap.</p>
-        </div>
-        
-        <div class="cat-grid reveal">
-          <a href="courses.html" class="cat-card-tile">
-            <div class="cat-tile-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
-            </div>
-            <h3>Web Development</h3>
-            <p>HTML5, Modern CSS, ES6 JavaScript, responsive structures, and modern hosting ecosystems.</p>
-            <div class="cat-tile-meta">
-              <span>18 Courses</span>
-              <span>₹18k Avg.</span>
-            </div>
-          </a>
-          
-          <a href="courses.html" class="cat-card-tile">
-            <div class="cat-tile-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-            </div>
-            <h3>App Development</h3>
-            <p>Native Swift, Kotlin, cross-platform Android, and cloud databases implementation.</p>
-            <div class="cat-tile-meta">
-              <span>12 Courses</span>
-              <span>₹22k Avg.</span>
-            </div>
-          </a>
-          
-          <a href="courses.html" class="cat-card-tile">
-            <div class="cat-tile-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
-            </div>
-            <h3>UI/UX Design</h3>
-            <p>Figma grids, wireframing, UX logic maps, standard SaaS interface design flows.</p>
-            <div class="cat-tile-meta">
-              <span>15 Courses</span>
-              <span>₹16k Avg.</span>
-            </div>
-          </a>
-          
-          <a href="courses.html" class="cat-card-tile">
-            <div class="cat-tile-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-            </div>
-            <h3>AI & Machine Learning</h3>
-            <p>LLM prompting APIs, data modeling parameters, vector systems, automation modules.</p>
-            <div class="cat-tile-meta">
-              <span>9 Courses</span>
-              <span>₹32k Avg.</span>
-            </div>
-          </a>
-        </div>
-        
-        <div style="text-align: center; margin-top: 48px;" class="reveal">
-          <a href="categories.html" class="btn btn-secondary">Explore All Categories</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- HOW IT WORKS (Learning Experience Features) -->
   <section class="section-container">
     <div class="container">
       <div class="section">
-        <div class="section-header reveal">
+        <div class="section-header " data-aos="fade-up">
           <p class="sec-eyebrow">HOW IT WORKS</p>
           <h2 class="sec-title">Simple. Structured. Real-world.</h2>
           <p class="sec-sub">Three steps to build certified professional expertise.</p>
         </div>
         
         <div class="how-grid">
-          <div class="how-card reveal delay-100">
+          <div class="how-card delay-100" data-aos="fade-up">
             <div class="how-num">01</div>
             <div class="how-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
@@ -441,7 +232,7 @@
             <p>Browse by specific focus, skill level, or institution. Filter by live workgroups or self-paced video modules.</p>
           </div>
           
-          <div class="how-card reveal delay-200">
+          <div class="how-card delay-200" data-aos="fade-up">
             <div class="how-num">02</div>
             <div class="how-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -450,7 +241,7 @@
             <p>Access modern interfaces, homework tasks, community channels, and live practitioner workshops.</p>
           </div>
           
-          <div class="how-card reveal delay-300">
+          <div class="how-card delay-300" data-aos="fade-up">
             <div class="how-num">03</div>
             <div class="how-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
@@ -468,7 +259,7 @@
     <div class="container">
       <div class="section" style="padding: 80px 0;">
         <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center;">
-          <div class="reveal">
+          <div class="" data-aos="fade-up">
             <p class="sec-eyebrow">PORTABLE CLASSROOMS</p>
             <h2 class="sec-title" style="font-size: 34px;">Study Anywhere. Anytime.</h2>
             <p class="sec-sub" style="margin-bottom: 28px;">Download the official 25 Hours mobile app. Keep track of lectures, complete quizzes, join offline workshops, and view your claimed certificates directly on the move.</p>
@@ -493,14 +284,14 @@
             </div>
           </div>
           
-          <div class="reveal" style="position: relative; display: flex; justify-content: center;">
+          <div class="" data-aos="fade-up" style="position: relative; display: flex; justify-content: center;">
             <!-- Mobile App Glass Phone Wireframe using Pure CSS -->
             <div style="width: 240px; height: 420px; border-radius: 36px; border: 6px solid var(--border-color-hover); background: var(--bg-surface); padding: 18px; box-shadow: var(--shadow-lg); transform: rotate(8deg); position: relative;">
               <div style="width: 80px; height: 16px; background: var(--border-color-hover); border-radius: 8px; margin: 0 auto 18px;"></div>
               <!-- Simulated App screen content -->
               <div style="background: var(--bg-secondary); border-radius: 18px; width: 100%; height: 330px; padding: 14px; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 12px;">
                 <div style="font-size: 10px; font-weight: 700; color: var(--primary-color);">WELCOME BACK</div>
-                <div style="font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700;">Active Course</div>
+                <div style="font-family: 'Fragment Mono', monospace; font-size: 14px; font-weight: 700;">Active Course</div>
                 <div style="background: var(--bg-surface); border-radius: 8px; padding: 10px; border: 1px solid var(--border-color);">
                   <div style="font-size: 11px; font-weight: 700; margin-bottom: 4px;">AI Prompting</div>
                   <div style="width: 100%; height: 4px; background: var(--border-color); border-radius: 2px;">
@@ -520,35 +311,35 @@
   <section class="section-container">
     <div class="container">
       <div class="section">
-        <div class="section-header reveal">
+        <div class="section-header " data-aos="fade-up">
           <p class="sec-eyebrow">EXPERT Tutors</p>
           <h2 class="sec-title">Learn from Active Practitioners</h2>
           <p class="sec-sub">Every class is mentored by working professional founders, strategists, and designers.</p>
         </div>
         
         <div class="inst-grid">
-          <a class="inst-card reveal delay-100" href="instructors.html">
+          <a class="inst-card delay-100" data-aos="fade-up" href="instructors.html">
             <div class="inst-av" style="background:var(--accent-purple-light);color:var(--accent-purple);">RM</div>
             <h3 class="inst-name">Rahul Menon</h3>
             <p class="inst-role">Entrepreneur & Investor</p>
             <span class="inst-stat">4 courses · 2.1k learners</span>
           </a>
           
-          <a class="inst-card reveal delay-200" href="instructors.html">
+          <a class="inst-card delay-200" data-aos="fade-up" href="instructors.html">
             <div class="inst-av" style="background:var(--accent-teal-light);color:var(--accent-teal);">NP</div>
             <h3 class="inst-name">Nisha Pillai</h3>
             <p class="inst-role">Growth Marketer</p>
             <span class="inst-stat">3 courses · 1.4k learners</span>
           </a>
           
-          <a class="inst-card reveal delay-300" href="instructors.html">
+          <a class="inst-card delay-300" data-aos="fade-up" href="instructors.html">
             <div class="inst-av" style="background:var(--accent-amber-light);color:var(--accent-amber);">AD</div>
             <h3 class="inst-name">Arjun Das</h3>
             <p class="inst-role">Communication Coach</p>
             <span class="inst-stat">2 courses · 980 learners</span>
           </a>
           
-          <a class="inst-card reveal delay-400" href="instructors.html">
+          <a class="inst-card delay-400" data-aos="fade-up" href="instructors.html">
             <div class="inst-av" style="background:var(--accent-blue-light);color:var(--accent-blue);">PK</div>
             <h3 class="inst-name">Priya Kumar</h3>
             <p class="inst-role">AI strategist</p>
@@ -563,14 +354,14 @@
   <section class="section-container" style="background: var(--bg-secondary);">
     <div class="container">
       <div class="section">
-        <div class="section-header reveal">
+        <div class="section-header " data-aos="fade-up">
           <p class="sec-eyebrow">TESTIMONIALS</p>
           <h2 class="sec-title">What Our Learners Say</h2>
           <p class="sec-sub">View genuine professional breakthroughs from real student practitioners.</p>
         </div>
         
         <div class="t-grid">
-          <div class="t-card reveal delay-100">
+          <div class="t-card delay-100" data-aos="fade-up">
             <div class="stars">★★★★★</div>
             <p class="t-quote">"The startup course gave me a real framework — not just theory. I launched my venture 3 months after completing it."</p>
             <div class="t-person">
@@ -582,7 +373,7 @@
             </div>
           </div>
           
-          <div class="t-card reveal delay-200">
+          <div class="t-card delay-200" data-aos="fade-up">
             <div class="stars">★★★★★</div>
             <p class="t-quote">"Finally a platform that feels built for us — not Silicon Valley. The instructors understand our market."</p>
             <div class="t-person">
@@ -594,7 +385,7 @@
             </div>
           </div>
           
-          <div class="t-card reveal delay-300">
+          <div class="t-card delay-300" data-aos="fade-up">
             <div class="stars">★★★★★</div>
             <p class="t-quote">"The certificate carried real weight. My employer recognized the institution partnership and it helped me get promoted."</p>
             <div class="t-person">
@@ -614,13 +405,13 @@
   <section class="section-container">
     <div class="container">
       <div class="section" style="max-width: 800px; margin: 0 auto;">
-        <div class="section-header reveal" style="text-align: center; margin: 0 auto 48px;">
+        <div class="section-header " data-aos="fade-up" style="text-align: center; margin: 0 auto 48px;">
           <p class="sec-eyebrow">COMMON QUESTIONS</p>
           <h2 class="sec-title">FAQ Section</h2>
           <p class="sec-sub">Answers to questions regarding curriculum, timing, pricing, and verify tools.</p>
         </div>
         
-        <div class="reveal">
+        <div class="" data-aos="fade-up">
           <div class="faq-item">
             <button class="faq-trigger">
               Are these courses self-paced or live scheduled?
@@ -658,7 +449,7 @@
           </div>
         </div>
         
-        <div style="text-align: center; margin-top: 36px;" class="reveal">
+        <div style="text-align: center; margin-top: 36px;" class="" data-aos="fade-up">
           <a href="faq.html" class="btn btn-secondary">View All FAQs</a>
         </div>
       </div>
@@ -669,7 +460,7 @@
   <section class="section-container" style="background: var(--bg-secondary);">
     <div class="container">
       <div class="section">
-        <div class="newsletter-card reveal">
+        <div class="newsletter-card " data-aos="fade-up">
           <h2 class="newsletter-title">Stay Ahead of the Curve</h2>
           <p class="newsletter-sub">Get weekly tactical guides, practitioner essays, and course launch notifications directly in your inbox.</p>
           <form class="newsletter-form" id="newsletterForm">
@@ -684,7 +475,7 @@
   <!-- CTA BAND -->
   <div class="cta-section">
     <div class="container">
-      <div class="cta-band reveal">
+      <div class="cta-band " data-aos="fade-up">
         <div class="cta-left">
           <h2 class="cta-title">Ready to grow? Join 25 Hours today.</h2>
           <p class="cta-sub">Start free. Upgrade anytime. Cancel whenever you want.</p>
@@ -698,11 +489,12 @@
   </div>
 
   <!-- MULTI-COLUMN MODERN FOOTER -->
+  </main>
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h2>25 Hours</h2>
+          <a href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img footer-logo-img"></a>
           <p>India's leading practitioner-first learning platform for modern professionals.</p>
           <div class="footer-socials">
             <a href="#" class="social-icon" aria-label="Twitter">🕊</a>
@@ -753,5 +545,7 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/courses.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

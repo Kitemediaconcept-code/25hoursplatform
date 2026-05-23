@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -52,12 +52,13 @@
     ]
   }
   </script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- GLOBAL NAV BAR -->
   <nav id="navbar">
-    <a class="logo" href="index.html">25<em>Hours</em></a>
+    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
@@ -108,6 +109,7 @@
       <li><a href="dashboard.html">Student Dashboard</a></li>
     </ul>
   </div>
+  <main>
 
   <!-- FAQ MAIN WORKSPACE -->
   <main class="container" style="padding: 48px 32px; max-width: 800px;">
@@ -124,7 +126,7 @@
     <!-- Accordion wrap -->
     <div style="margin-bottom: 56px;">
       <!-- Item 1 -->
-      <div class="faq-item reveal">
+      <div class="faq-item " data-aos="fade-up">
         <button class="faq-trigger">
           How does the 25 Hours subscription work?
           <span class="faq-icon">+</span>
@@ -137,7 +139,7 @@
       </div>
 
       <!-- Item 2 -->
-      <div class="faq-item reveal delay-100">
+      <div class="faq-item delay-100" data-aos="fade-up">
         <button class="faq-trigger">
           Are the credentials and certificates verified?
           <span class="faq-icon">+</span>
@@ -150,7 +152,7 @@
       </div>
 
       <!-- Item 3 -->
-      <div class="faq-item reveal delay-200">
+      <div class="faq-item delay-200" data-aos="fade-up">
         <button class="faq-trigger">
           Can I cancel my membership plan anytime?
           <span class="faq-icon">+</span>
@@ -163,7 +165,7 @@
       </div>
 
       <!-- Item 4 -->
-      <div class="faq-item reveal">
+      <div class="faq-item " data-aos="fade-up">
         <button class="faq-trigger">
           What are practitioner code reviews?
           <span class="faq-icon">+</span>
@@ -176,7 +178,7 @@
       </div>
 
       <!-- Item 5 -->
-      <div class="faq-item reveal delay-100">
+      <div class="faq-item delay-100" data-aos="fade-up">
         <button class="faq-trigger">
           How can my team sign up under an enterprise license?
           <span class="faq-icon">+</span>
@@ -189,7 +191,7 @@
       </div>
 
       <!-- Item 6 -->
-      <div class="faq-item reveal delay-200">
+      <div class="faq-item delay-200" data-aos="fade-up">
         <button class="faq-trigger">
           Can I suggest new courses or topic modules?
           <span class="faq-icon">+</span>
@@ -206,7 +208,7 @@
   <!-- CTA BAND -->
   <div class="cta-section">
     <div class="container">
-      <div class="cta-band reveal">
+      <div class="cta-band " data-aos="fade-up">
         <div class="cta-left">
           <h2 class="cta-title">Ready to grow? Join 25 Hours today.</h2>
           <p class="cta-sub">Start free. Upgrade anytime. Cancel whenever you want.</p>
@@ -220,11 +222,12 @@
   </div>
 
   <!-- MULTI-COLUMN MODERN FOOTER -->
+  </main>
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h2>25 Hours</h2>
+          <a href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img footer-logo-img"></a>
           <p>India's leading practitioner-first learning platform for modern professionals.</p>
           <div class="footer-socials">
             <a href="#" class="social-icon" aria-label="Twitter">🕊</a>
@@ -275,5 +278,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -29,12 +29,13 @@
     "url": "https://25hoursplatform.com/login.html"
   }
   </script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- GLOBAL NAV BAR -->
   <nav id="navbar">
-    <a class="logo" href="index.html">25<em>Hours</em></a>
+    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
@@ -85,10 +86,11 @@
       <li><a href="dashboard.html">Student Dashboard</a></li>
     </ul>
   </div>
+  <main>
 
   <!-- AUTH MAIN CONTAINER -->
   <main class="auth-container" style="background: var(--hero-grid-radial);">
-    <div class="auth-card reveal">
+    <div class="auth-card " data-aos="fade-up">
       <!-- Tabs header toggle switchers -->
       <div class="auth-tabs">
         <button class="auth-tab active" data-form="loginForm">Log In</button>
@@ -157,5 +159,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

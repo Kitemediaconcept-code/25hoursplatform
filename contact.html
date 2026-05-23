@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -39,12 +39,13 @@
     }
   }
   </script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- GLOBAL NAV BAR -->
   <nav id="navbar">
-    <a class="logo" href="index.html">25<em>Hours</em></a>
+    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
@@ -95,6 +96,7 @@
       <li><a href="dashboard.html">Student Dashboard</a></li>
     </ul>
   </div>
+  <main>
 
   <!-- CONTACT CONTAINER -->
   <main class="container" style="padding: 48px 32px;">
@@ -111,7 +113,7 @@
     <!-- Contact Grid -->
     <div class="contact-grid">
       <!-- Left side info cards -->
-      <div class="contact-info reveal">
+      <div class="contact-info " data-aos="fade-up">
         <!-- Card 1 -->
         <div class="contact-card">
           <div class="contact-icon">✉️</div>
@@ -150,7 +152,7 @@
       </div>
 
       <!-- Right side form -->
-      <div class="form-card reveal delay-100">
+      <div class="form-card delay-100" data-aos="fade-up">
         <form id="contactForm">
           <div class="form-group">
             <label class="form-label" for="contactName">Full Name</label>
@@ -181,7 +183,7 @@
   <!-- CTA BAND -->
   <div class="cta-section">
     <div class="container">
-      <div class="cta-band reveal">
+      <div class="cta-band " data-aos="fade-up">
         <div class="cta-left">
           <h2 class="cta-title">Ready to grow? Join 25 Hours today.</h2>
           <p class="cta-sub">Start free. Upgrade anytime. Cancel whenever you want.</p>
@@ -195,11 +197,12 @@
   </div>
 
   <!-- MULTI-COLUMN MODERN FOOTER -->
+  </main>
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h2>25 Hours</h2>
+          <a href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img footer-logo-img"></a>
           <p>India's leading practitioner-first learning platform for modern professionals.</p>
           <div class="footer-socials">
             <a href="#" class="social-icon" aria-label="Twitter">🕊</a>
@@ -250,5 +253,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

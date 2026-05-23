@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -17,12 +17,13 @@
   <meta name="twitter:card" content="summary_large_image">
   
   <link rel="stylesheet" href="assets/css/style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- GLOBAL NAV BAR -->
   <nav id="navbar">
-    <a class="logo" href="index.html">25<em>Hours</em></a>
+    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
@@ -73,10 +74,11 @@
       <li><a href="dashboard.html">Student Dashboard</a></li>
     </ul>
   </div>
+  <main>
 
   <!-- ERROR PAGE CONTAINER -->
   <main class="error-container" style="background: var(--hero-grid-radial);">
-    <div class="error-card reveal">
+    <div class="error-card " data-aos="fade-up">
       <div class="error-code">404</div>
       <h1 class="error-title">Limit Reached</h1>
       <p class="error-sub">The coordinates you followed do not exist in our learning pathways. Check your syntax or navigate back home to start fresh.</p>
@@ -99,5 +101,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

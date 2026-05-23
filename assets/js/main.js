@@ -48,22 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Scroll Reveal Animations (Intersection Observer)
-  const revealElements = document.querySelectorAll('.reveal');
-  if (revealElements.length > 0) {
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -30px 0px'
+  // 4. Premium Scroll Animations (AOS)
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 50,
+      easing: 'ease-out-cubic'
     });
-
-    revealElements.forEach(el => revealObserver.observe(el));
   }
 
   // 5. Dynamic Stats Counter Animation
@@ -333,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
       toast.style.boxShadow = 'var(--shadow-lg)';
       toast.style.zIndex = '9999';
       toast.style.fontWeight = '700';
-      toast.style.fontFamily = 'Syne, sans-serif';
+      toast.style.fontFamily = "'Fragment Mono', monospace";
       toast.style.fontSize = '14px';
       toast.textContent = 'Message sent! We will contact you within 24 hours.';
       

@@ -81,12 +81,13 @@
     ]
   }
   </script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- GLOBAL NAV BAR -->
   <nav id="navbar">
-    <a class="logo" href="index.html">25<em>Hours</em></a>
+    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="courses.html" class="active">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
@@ -137,6 +138,7 @@
       <li><a href="dashboard.html">Student Dashboard</a></li>
     </ul>
   </div>
+  <main>
 
   <!-- MAIN CATALOG CONTENT -->
   <main class="container" style="padding: 48px 32px;">
@@ -227,162 +229,11 @@
 
       <!-- Right Main Catalog Grids -->
       <section class="catalog-main">
-        <div class="course-grid">
-          <!-- Card 1 -->
-          <a class="c-card" data-cat="business" data-level="intermediate" data-price="paid" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-purple-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
-                <polyline points="16 7 22 7 22 13"></polyline>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Business</p>
-              <h3 class="c-name">Startup to Scale: Building Your First Venture</h3>
-              <p class="c-by">Rahul Menon · 6 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹1,499</span>
-                <span class="pill pill-teal">Certificate</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Card 2 -->
-          <a class="c-card" data-cat="marketing" data-level="beginner" data-price="paid" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-teal-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 11l19-9-9 19-2-8-8-2z"></path>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Marketing</p>
-              <h3 class="c-name">Digital Marketing for Growth-Stage Brands</h3>
-              <p class="c-by">Nisha Pillai · 4 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹999</span>
-                <span class="pill pill-teal">Certificate</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Card 3 -->
-          <a class="c-card" data-cat="communication" data-level="advanced" data-price="free" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-amber-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
-                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                <line x1="12" y1="19" x2="12" y2="23"></line>
-                <line x1="8" y1="23" x2="16" y2="23"></line>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Communication</p>
-              <h3 class="c-name">Public Speaking Mastery for Professionals</h3>
-              <p class="c-by">Arjun Das · 3 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">Free</span>
-                <span class="pill pill-amber">Workshop</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Card 4 -->
-          <a class="c-card" data-cat="tech" data-level="intermediate" data-price="paid" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-blue-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="7" height="7"></rect>
-                <rect x="14" y="3" width="7" height="7"></rect>
-                <rect x="14" y="14" width="7" height="7"></rect>
-                <rect x="3" y="14" width="7" height="7"></rect>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Technology</p>
-              <h3 class="c-name">AI Tools for Modern Business Teams</h3>
-              <p class="c-by">Priya Kumar · 5 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹1,999</span>
-                <span class="pill pill-teal">Certificate</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Card 5 -->
-          <a class="c-card" data-cat="finance" data-level="beginner" data-price="paid" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-purple-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" y1="1" x2="12" y2="23"></line>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Finance</p>
-              <h3 class="c-name">Personal Finance and Wealth Fundamentals</h3>
-              <p class="c-by">Arun Nair · 4 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹1,299</span>
-                <span class="pill pill-teal">Certificate</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Card 6 -->
-          <a class="c-card" data-cat="design" data-level="advanced" data-price="paid" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-teal-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3"></circle>
-                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Design</p>
-              <h3 class="c-name">Brand Identity Design for Founders</h3>
-              <p class="c-by">Shreya Menon · 3 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹799</span>
-                <span class="pill pill-amber">Workshop</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Card 7 (Development specific) -->
-          <a class="c-card" data-cat="development" data-level="advanced" data-price="paid" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-blue-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
-                <polyline points="2 8.5 12 15 22 8.5"></polyline>
-                <line x1="12" y1="22" x2="12" y2="15"></line>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">Development</p>
-              <h3 class="c-name">Full-Stack HTML5/CSS3/JavaScript Engineering</h3>
-              <p class="c-by">Priya Kumar · 8 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹2,499</span>
-                <span class="pill pill-teal">Certificate</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Card 8 (App Dev specific) -->
-          <a class="c-card" data-cat="development" data-level="intermediate" data-price="paid" href="course-details.html">
-            <div class="c-thumb" style="background:var(--accent-purple-light);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                <line x1="12" y1="18" x2="12" y2="18"></line>
-              </svg>
-            </div>
-            <div class="c-body">
-              <p class="c-tag">App Dev</p>
-              <h3 class="c-name">Mobile App Design with Swift & Kotlin</h3>
-              <p class="c-by">Rahul Menon · 6 weeks</p>
-              <div class="c-foot">
-                <span class="c-price">₹1,799</span>
-                <span class="pill pill-teal">Certificate</span>
-              </div>
-            </div>
-          </a>
+        <div id="coursesContainer" class="course-grid">
+          <!-- Dynamic courses will be loaded here -->
+          <div id="loadingIndicator" style="grid-column: 1 / -1; text-align: center; padding: 48px; color: var(--text-muted);">
+            Loading courses from database...
+          </div>
         </div>
       </section>
     </div>
@@ -405,11 +256,12 @@
   </div>
 
   <!-- MULTI-COLUMN MODERN FOOTER -->
+  </main>
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h2>25 Hours</h2>
+          <a href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img footer-logo-img"></a>
           <p>India's leading practitioner-first learning platform for modern professionals.</p>
           <div class="footer-socials">
             <a href="#" class="social-icon" aria-label="Twitter">🕊</a>
@@ -460,5 +312,7 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/courses.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

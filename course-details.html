@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -45,12 +45,13 @@
     }
   }
   </script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- GLOBAL NAV BAR -->
   <nav id="navbar">
-    <a class="logo" href="index.html">25<em>Hours</em></a>
+    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="courses.html" class="active">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
@@ -101,6 +102,7 @@
       <li><a href="dashboard.html">Student Dashboard</a></li>
     </ul>
   </div>
+  <main>
 
   <!-- COURSE TITLE BAR HEADER -->
   <header class="cd-header-wrap">
@@ -244,7 +246,7 @@
           <div style="display: flex; gap: 24px; margin-top: 20px; align-items: flex-start; flex-wrap: wrap;">
             <div class="inst-av" style="width: 72px; height: 72px; background: var(--accent-purple-light); color: var(--accent-purple); font-size: 24px; margin: 0; flex-shrink: 0;">RM</div>
             <div style="flex-grow: 1;">
-              <h3 style="font-family: 'Syne', sans-serif; font-size: 18px; margin-bottom: 4px;">Rahul Menon</h3>
+              <h3 style="font-family: 'Fragment Mono', monospace; font-size: 18px; margin-bottom: 4px;">Rahul Menon</h3>
               <p style="color: var(--primary-color); font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 12px;">Active Venture Partner & Strategic Advisor</p>
               <p style="color: var(--text-muted); font-size: 14.5px; line-height: 1.6;">
                 Rahul is the managing partner at Headword Ventures and has helped scale over 15 digital startups to seed level. He teaches tactical validation metrics to ensure students build sustainable products.
@@ -301,7 +303,7 @@
   <section class="section-container" style="background: var(--bg-secondary);">
     <div class="container">
       <div class="section">
-        <div class="section-header reveal">
+        <div class="section-header " data-aos="fade-up">
           <p class="sec-eyebrow">CONTINUE PREVIEWING</p>
           <h2 class="sec-title">Related Courses</h2>
           <p class="sec-sub">Further expand your professional toolkit with related paths.</p>
@@ -360,11 +362,12 @@
   </div>
 
   <!-- MULTI-COLUMN MODERN FOOTER -->
+  </main>
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h2>25 Hours</h2>
+          <a href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img footer-logo-img"></a>
           <p>India's leading practitioner-first learning platform for modern professionals.</p>
           <div class="footer-socials">
             <a href="#" class="social-icon" aria-label="Twitter">🕊</a>
@@ -415,5 +418,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

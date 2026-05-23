@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -34,12 +34,13 @@
     }
   }
   </script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- GLOBAL NAV BAR -->
   <nav id="navbar">
-    <a class="logo" href="index.html">25<em>Hours</em></a>
+    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
@@ -90,6 +91,7 @@
       <li><a href="dashboard.html">Student Dashboard</a></li>
     </ul>
   </div>
+  <main>
 
   <!-- ABOUT HERO SECTION -->
   <header class="cd-header-wrap" style="background: var(--hero-grid-radial); border-bottom: 1px solid var(--border-color); padding: 80px 0 60px;">
@@ -111,15 +113,15 @@
   <section class="section-container" style="border-bottom: 1px solid var(--border-color); padding: 48px 0;">
     <div class="container">
       <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; text-align: center;">
-        <div class="reveal">
+        <div class="" data-aos="fade-up">
           <div class="stat-counter brand-font" style="font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: var(--primary-color);">45,000+</div>
           <p style="font-size: 13.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-top: 8px;">Active Professionals</p>
         </div>
-        <div class="reveal delay-100">
+        <div class=" delay-100" data-aos="fade-up">
           <div class="stat-counter brand-font" style="font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: var(--accent-teal);">120+</div>
           <p style="font-size: 13.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-top: 8px;">Practitioner Guides</p>
         </div>
-        <div class="reveal delay-200">
+        <div class=" delay-200" data-aos="fade-up">
           <div class="stat-counter brand-font" style="font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: var(--accent-amber);">98.4%</div>
           <p style="font-size: 13.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-top: 8px;">Completion Rate</p>
         </div>
@@ -130,7 +132,7 @@
   <!-- DUAL COLUMN PHILOSOPHY -->
   <section class="section-container">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;" class="reveal">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;" class="" data-aos="fade-up">
         <div>
           <h2 class="brand-font" style="font-size: clamp(24px, 4vw, 32px); font-weight: 800; letter-spacing: -0.8px; margin-bottom: 20px; line-height: 1.2;">Designed for the 25th Hour</h2>
           <p style="color: var(--text-muted); font-size: 15px; line-height: 1.6; margin-bottom: 16px;">We believe that everyone has an extra hour hidden in their daily routine. By eliminating fluff, pre-recorded drone courses, and academic gatekeeping, we help you capture that hour and convert it into career-defining skills.</p>
@@ -169,14 +171,14 @@
   <!-- HOW IT WORKS TIMELINE (REUSING STYLES) -->
   <section class="section-container" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
     <div class="container">
-      <div style="text-align: center; margin-bottom: 56px;" class="reveal">
+      <div style="text-align: center; margin-bottom: 56px;" class="" data-aos="fade-up">
         <h2 class="brand-font" style="font-size: clamp(24px, 4vw, 32px); font-weight: 800; letter-spacing: -0.8px; margin-bottom: 12px;">Our Journey of Limits</h2>
         <p style="color: var(--text-muted); font-size: 15px; max-width: 600px; margin: 0 auto;">From a small newsletter to India's premier practitioner-first career platform.</p>
       </div>
 
       <div class="how-grid">
         <!-- Milestone 1 -->
-        <div class="how-card reveal">
+        <div class="how-card " data-aos="fade-up">
           <span class="how-num">2024</span>
           <div class="how-icon">🌱</div>
           <h3>The Genesis</h3>
@@ -184,7 +186,7 @@
         </div>
 
         <!-- Milestone 2 -->
-        <div class="how-card reveal delay-100">
+        <div class="how-card delay-100" data-aos="fade-up">
           <span class="how-num" style="color: var(--accent-teal); background: var(--accent-teal-light);">2025</span>
           <div class="how-icon">🚀</div>
           <h3>Cohort Expansion</h3>
@@ -192,7 +194,7 @@
         </div>
 
         <!-- Milestone 3 -->
-        <div class="how-card reveal delay-200">
+        <div class="how-card delay-200" data-aos="fade-up">
           <span class="how-num" style="color: var(--accent-amber); background: var(--accent-amber-light);">2026</span>
           <div class="how-icon">💎</div>
           <h3>Practitioner Network</h3>
@@ -205,7 +207,7 @@
   <!-- CTA BAND -->
   <div class="cta-section">
     <div class="container">
-      <div class="cta-band reveal">
+      <div class="cta-band " data-aos="fade-up">
         <div class="cta-left">
           <h2 class="cta-title">Ready to grow? Join 25 Hours today.</h2>
           <p class="cta-sub">Start free. Upgrade anytime. Cancel whenever you want.</p>
@@ -219,11 +221,12 @@
   </div>
 
   <!-- MULTI-COLUMN MODERN FOOTER -->
+  </main>
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h2>25 Hours</h2>
+          <a href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img footer-logo-img"></a>
           <p>India's leading practitioner-first learning platform for modern professionals.</p>
           <div class="footer-socials">
             <a href="#" class="social-icon" aria-label="Twitter">🕊</a>
@@ -274,5 +277,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

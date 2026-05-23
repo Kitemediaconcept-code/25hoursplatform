@@ -24,7 +24,5 @@ jspm_packages/
 *.sw?
 .DS_Store
 
-# Firebase CLI cache and logs
-.firebase/
-firebase-debug.log
-firebase-debug.*.log
+# Vercel CLI cache
+.vercel/

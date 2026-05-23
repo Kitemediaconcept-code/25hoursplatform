@@ -64,12 +64,13 @@
     ]
   }
   </script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- GLOBAL NAV BAR -->
   <nav id="navbar">
-    <a class="logo" href="index.html">25<em>Hours</em></a>
+    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html" class="active">Categories</a></li>
@@ -120,6 +121,7 @@
       <li><a href="dashboard.html">Student Dashboard</a></li>
     </ul>
   </div>
+  <main>
 
   <!-- MAIN CONTENT -->
   <main class="container" style="padding: 48px 32px;">
@@ -136,7 +138,7 @@
     <!-- Categories Grid -->
     <div class="cat-grid">
       <!-- Category 1: Development -->
-      <a href="courses.html" class="cat-card-tile reveal">
+      <a href="courses.html" class="cat-card-tile " data-aos="fade-up">
         <div class="cat-tile-icon" style="background: var(--accent-blue-light); color: var(--accent-blue);">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <polyline points="16 18 22 12 16 6"></polyline>
@@ -152,7 +154,7 @@
       </a>
 
       <!-- Category 2: AI -->
-      <a href="courses.html" class="cat-card-tile reveal delay-100">
+      <a href="courses.html" class="cat-card-tile delay-100" data-aos="fade-up">
         <div class="cat-tile-icon" style="background: var(--accent-amber-light); color: var(--accent-amber);">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10"></circle>
@@ -169,7 +171,7 @@
       </a>
 
       <!-- Category 3: Design -->
-      <a href="courses.html" class="cat-card-tile reveal delay-200">
+      <a href="courses.html" class="cat-card-tile delay-200" data-aos="fade-up">
         <div class="cat-tile-icon" style="background: var(--accent-teal-light); color: var(--accent-teal);">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
@@ -185,7 +187,7 @@
       </a>
 
       <!-- Category 4: Business -->
-      <a href="courses.html" class="cat-card-tile reveal delay-300">
+      <a href="courses.html" class="cat-card-tile delay-300" data-aos="fade-up">
         <div class="cat-tile-icon" style="background: var(--accent-purple-light); color: var(--accent-purple);">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <line x1="18" y1="20" x2="18" y2="10"></line>
@@ -202,7 +204,7 @@
       </a>
 
       <!-- Category 5: Marketing -->
-      <a href="courses.html" class="cat-card-tile reveal">
+      <a href="courses.html" class="cat-card-tile " data-aos="fade-up">
         <div class="cat-tile-icon" style="background: var(--accent-teal-light); color: var(--accent-teal);">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="M11 5L6 9H2V15H6L11 19V5Z"></path>
@@ -218,7 +220,7 @@
       </a>
 
       <!-- Category 6: Finance -->
-      <a href="courses.html" class="cat-card-tile reveal delay-100">
+      <a href="courses.html" class="cat-card-tile delay-100" data-aos="fade-up">
         <div class="cat-tile-icon" style="background: var(--accent-purple-light); color: var(--accent-purple);">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <line x1="12" y1="1" x2="12" y2="23"></line>
@@ -234,7 +236,7 @@
       </a>
 
       <!-- Category 7: Product Management -->
-      <a href="courses.html" class="cat-card-tile reveal delay-200">
+      <a href="courses.html" class="cat-card-tile delay-200" data-aos="fade-up">
         <div class="cat-tile-icon" style="background: var(--accent-blue-light); color: var(--accent-blue);">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <rect x="3" y="3" width="7" height="7"></rect>
@@ -252,7 +254,7 @@
       </a>
 
       <!-- Category 8: Communication -->
-      <a href="courses.html" class="cat-card-tile reveal delay-300">
+      <a href="courses.html" class="cat-card-tile delay-300" data-aos="fade-up">
         <div class="cat-tile-icon" style="background: var(--accent-amber-light); color: var(--accent-amber);">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
@@ -271,7 +273,7 @@
   <!-- CTA BAND -->
   <div class="cta-section">
     <div class="container">
-      <div class="cta-band reveal">
+      <div class="cta-band " data-aos="fade-up">
         <div class="cta-left">
           <h2 class="cta-title">Ready to grow? Join 25 Hours today.</h2>
           <p class="cta-sub">Start free. Upgrade anytime. Cancel whenever you want.</p>
@@ -285,11 +287,12 @@
   </div>
 
   <!-- MULTI-COLUMN MODERN FOOTER -->
+  </main>
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h2>25 Hours</h2>
+          <a href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img footer-logo-img"></a>
           <p>India's leading practitioner-first learning platform for modern professionals.</p>
           <div class="footer-socials">
             <a href="#" class="social-icon" aria-label="Twitter">🕊</a>
@@ -340,5 +343,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

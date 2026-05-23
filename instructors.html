@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -46,12 +46,13 @@
     ]
   }
   </script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- GLOBAL NAV BAR -->
   <nav id="navbar">
-    <a class="logo" href="index.html">25<em>Hours</em></a>
+    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="courses.html">Courses</a></li>
       <li><a href="categories.html">Categories</a></li>
@@ -102,6 +103,7 @@
       <li><a href="dashboard.html">Student Dashboard</a></li>
     </ul>
   </div>
+  <main>
 
   <!-- INSTRUCTORS HUB -->
   <main class="container" style="padding: 48px 32px;">
@@ -118,7 +120,7 @@
     <!-- Instructors Grid -->
     <div class="inst-grid">
       <!-- Card 1 -->
-      <a href="courses.html" class="inst-card reveal">
+      <a href="courses.html" class="inst-card " data-aos="fade-up">
         <div class="inst-av" style="background: var(--accent-blue-light); color: var(--accent-blue);">RM</div>
         <h3 class="inst-name">Rahul Menon</h3>
         <p class="inst-role">Founder & Tech Lead</p>
@@ -126,7 +128,7 @@
       </a>
 
       <!-- Card 2 -->
-      <a href="courses.html" class="inst-card reveal delay-100">
+      <a href="courses.html" class="inst-card delay-100" data-aos="fade-up">
         <div class="inst-av" style="background: var(--accent-teal-light); color: var(--accent-teal);">NP</div>
         <h3 class="inst-name">Nisha Pillai</h3>
         <p class="inst-role">VP of Marketing, AppScale</p>
@@ -134,7 +136,7 @@
       </a>
 
       <!-- Card 3 -->
-      <a href="courses.html" class="inst-card reveal delay-200">
+      <a href="courses.html" class="inst-card delay-200" data-aos="fade-up">
         <div class="inst-av" style="background: var(--accent-amber-light); color: var(--accent-amber);">AD</div>
         <h3 class="inst-name">Arjun Das</h3>
         <p class="inst-role">Executive Speaking Coach</p>
@@ -142,7 +144,7 @@
       </a>
 
       <!-- Card 4 -->
-      <a href="courses.html" class="inst-card reveal delay-300">
+      <a href="courses.html" class="inst-card delay-300" data-aos="fade-up">
         <div class="inst-av" style="background: var(--accent-blue-light); color: var(--accent-blue);">PK</div>
         <h3 class="inst-name">Priya Kumar</h3>
         <p class="inst-role">Principal Scientist, AI Labs</p>
@@ -150,7 +152,7 @@
       </a>
 
       <!-- Card 5 -->
-      <a href="courses.html" class="inst-card reveal">
+      <a href="courses.html" class="inst-card " data-aos="fade-up">
         <div class="inst-av" style="background: var(--accent-teal-light); color: var(--accent-teal);">AN</div>
         <h3 class="inst-name">Arun Nair</h3>
         <p class="inst-role">Portfolio Strategist</p>
@@ -158,7 +160,7 @@
       </a>
 
       <!-- Card 6 -->
-      <a href="courses.html" class="inst-card reveal delay-100">
+      <a href="courses.html" class="inst-card delay-100" data-aos="fade-up">
         <div class="inst-av" style="background: var(--accent-amber-light); color: var(--accent-amber);">SM</div>
         <h3 class="inst-name">Shreya Menon</h3>
         <p class="inst-role">Creative Director, Syne Studio</p>
@@ -166,7 +168,7 @@
       </a>
 
       <!-- Card 7 -->
-      <a href="courses.html" class="inst-card reveal delay-200">
+      <a href="courses.html" class="inst-card delay-200" data-aos="fade-up">
         <div class="inst-av" style="background: var(--accent-blue-light); color: var(--accent-blue);">VS</div>
         <h3 class="inst-name">Vikram Sengupta</h3>
         <p class="inst-role">Director of Product, CloudOps</p>
@@ -174,7 +176,7 @@
       </a>
 
       <!-- Card 8 -->
-      <a href="courses.html" class="inst-card reveal delay-300">
+      <a href="courses.html" class="inst-card delay-300" data-aos="fade-up">
         <div class="inst-av" style="background: var(--accent-teal-light); color: var(--accent-teal);">AS</div>
         <h3 class="inst-name">Ananya Sen</h3>
         <p class="inst-role">DevOps Architect, InfraScale</p>
@@ -186,7 +188,7 @@
   <!-- CTA BAND -->
   <div class="cta-section">
     <div class="container">
-      <div class="cta-band reveal">
+      <div class="cta-band " data-aos="fade-up">
         <div class="cta-left">
           <h2 class="cta-title">Ready to grow? Join 25 Hours today.</h2>
           <p class="cta-sub">Start free. Upgrade anytime. Cancel whenever you want.</p>
@@ -200,11 +202,12 @@
   </div>
 
   <!-- MULTI-COLUMN MODERN FOOTER -->
+  </main>
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h2>25 Hours</h2>
+          <a href="index.html"><img src="assets/images/logo.png" alt="25 Hours Platform" class="logo-img footer-logo-img"></a>
           <p>India's leading practitioner-first learning platform for modern professionals.</p>
           <div class="footer-socials">
             <a href="#" class="social-icon" aria-label="Twitter">🕊</a>
@@ -255,5 +258,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
