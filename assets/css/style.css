@@ -2136,7 +2136,7 @@ footer {
 
 @media (max-width: 768px) {
   :root { --section-py: 80px; }
-  .nav { padding: 0 20px; }
+  .nav { padding: 0 20px; display: flex; justify-content: space-between; }
   .nav__links { display: none; }
   .nav__right .btn { display: none; }
   .nav__hamburger { display: flex; }
