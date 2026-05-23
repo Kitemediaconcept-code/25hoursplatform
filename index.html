@@ -46,46 +46,68 @@
 
   <main>
     <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="hero__bg">
-        <img src="assets/images/hero-person.png" alt="Professional working" class="hero__bg-img">
-        <div class="hero__bg-gradient"></div>
-      </div>
-      
-      <div class="hero__content reveal">
-        <div class="hero__badge">PREMIUM LEARNING PLATFORM</div>
-        <h1 class="hero__title">
-          Master the skills of <br><em>tomorrow</em>, today.
-        </h1>
-        <p class="hero__sub">
-          Cinematic, practitioner-led courses designed for ambitious professionals. Learn from the world's best, directly from their playbook.
-        </p>
-        <div class="hero__actions">
-          <a href="courses.html" class="btn btn--primary btn--lg">Start Learning</a>
-          <a href="pricing.html" class="btn btn--outline btn--lg">View Plans</a>
+    <section class="hero-split">
+      <div class="container hero-split__container">
+        
+        <!-- Left Content -->
+        <div class="hero-split__left reveal reveal--left">
+          <div class="hero__badge" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: var(--text-secondary); margin-bottom: 24px;">
+            <span style="background: #5b4fe8; color: white; padding: 2px 8px; border-radius: 12px; margin-right: 8px;">New</span> 
+            Registrations are now open!
+          </div>
+          
+          <h1 class="hero__title" style="text-align: left; font-family: var(--font-sans); font-size: clamp(48px, 6vw, 72px); letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 24px;">
+            Master UI Design<br>From Scratch
+          </h1>
+          
+          <p class="hero__sub" style="text-align: left; margin: 0 0 40px 0; max-width: 480px; font-size: 16px;">
+            The only design course you need to be among top 1% designers.
+            The only design course you need to be among
+          </p>
+          
+          <div class="hero__actions" style="justify-content: flex-start; margin-bottom: 48px;">
+            <a href="pricing.html" class="btn btn--primary" style="background: #5b4fe8; border-color: #5b4fe8; color: white; gap: 8px;">
+              Enroll Now 
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="courses.html" class="btn btn--outline" style="background: white; color: black; border-color: white;">See Curriculum</a>
+          </div>
+          
+          <div style="display: flex; gap: 24px; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; color: var(--text-secondary); text-transform: uppercase;">
+            <span style="display: flex; align-items: center; gap: 6px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg> ONLINE</span>
+            <span style="display: flex; align-items: center; gap: 6px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> HANDS-ON</span>
+            <span style="display: flex; align-items: center; gap: 6px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg> CERTIFICATE</span>
+          </div>
         </div>
         
-        <div class="hero__stats">
-          <div class="hero-stat">
-            <div class="hero-stat__num stat-counter">45+</div>
-            <div class="hero-stat__label">Expert Classes</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat__num stat-counter">12k</div>
-            <div class="hero-stat__label">Active Members</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat__num">98%</div>
-            <div class="hero-stat__label">Success Rate</div>
+        <!-- Right Content (Instructor Cards) -->
+        <div class="hero-split__right reveal reveal--right">
+          <div class="instructor-cards-wrap">
+            <div class="instructor-card-mini" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600');">
+              <div class="instructor-card-mini__info">
+                <div class="name">Elsa Thiel Madsen</div>
+                <div class="role">Lead Designer @ Facebook</div>
+              </div>
+            </div>
+            
+            <div class="instructor-card-mini active" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600');">
+              <div class="instructor-card-mini__info">
+                <div class="name">Jakob Geidt</div>
+                <div class="role">UI Designer @ Microsoft</div>
+              </div>
+            </div>
+            
+            <div class="instructor-card-mini" style="background-image: url('https://images.unsplash.com/photo-1531123897727-8f129e1bf98c?auto=format&fit=crop&q=80&w=600');">
+              <div class="instructor-card-mini__info">
+                <div class="name">Aspen Geidt</div>
+                <div class="role">Visual Designer @ Apple</div>
+              </div>
+            </div>
           </div>
         </div>
+        
       </div>
-      
-      <div class="hero__scroll-hint">
-        Scroll to explore
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-      </div>
-    </section>
+    </section>n>
 
     <!-- TRUSTED BY -->
     <div class="logo-strip reveal">
