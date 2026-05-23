@@ -2138,6 +2138,7 @@ footer {
   :root { --section-py: 80px; }
   .nav { padding: 0 20px; }
   .nav__links { display: none; }
+  .nav__right .btn { display: none; }
   .nav__hamburger { display: flex; }
   .hero { padding: calc(var(--nav-height) + 40px) 20px 80px; }
   .hero__stats { gap: 32px; }
