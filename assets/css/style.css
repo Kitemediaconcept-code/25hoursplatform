@@ -397,7 +397,7 @@ section {
 .hero-top{
     display:flex;
     justify-content:space-between;
-    align-items:flex-start;
+    align-items:flex-end;
     gap:50px;
     margin-bottom:70px;
 }
@@ -441,14 +441,14 @@ section {
 /* RIGHT */
 
 .hero-right{
-    max-width:360px;
+    max-width:420px;
 }
 
 .hero-right p{
     color:#b5b5b5;
     line-height:1.8;
     margin-bottom:32px;
-    font-size:16px;
+    font-size:14px;
 }
 
 /* BUTTONS */
