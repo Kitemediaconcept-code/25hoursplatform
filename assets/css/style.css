@@ -382,7 +382,7 @@ section {
 .hero{
     width:100%;
     min-height:100vh;
-    padding:80px 6%;
+    padding: 180px 6% 120px;
     display:flex;
     align-items:center;
     justify-content:center;
